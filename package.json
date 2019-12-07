@@ -1,0 +1,28 @@
+{
+  "name": "ba-salons",
+  "version": "1.0.0",
+  "description": "BA Salons website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepunkyone/ba-salons.git"
+  },
+  "keywords": [
+    "html",
+    "scss",
+    "static",
+    "site"
+  ],
+  "author": "Vitnija Bluzma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thepunkyone/ba-salons/issues"
+  },
+  "homepage": "https://github.com/thepunkyone/ba-salons#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
