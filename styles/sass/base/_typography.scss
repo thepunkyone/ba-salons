@@ -16,6 +16,11 @@ h2 {
   text-align: center;
 }
 
+h1 {
+  border-bottom: 2px solid $colour-black;
+  margin-bottom: gutter(2);
+}
+
 p {
   text-align: justify;
   margin: 1rem;

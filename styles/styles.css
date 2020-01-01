@@ -26,6 +26,10 @@ h2 {
   text-transform: uppercase;
   text-align: center; }
 
+h1 {
+  border-bottom: 2px solid #18131a;
+  margin-bottom: 1.6rem; }
+
 p {
   text-align: justify;
   margin: 1rem; }
