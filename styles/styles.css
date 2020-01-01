@@ -1,0 +1,12 @@
+.hero__image-container {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.hero__image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
