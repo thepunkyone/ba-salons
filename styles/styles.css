@@ -10,7 +10,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #39373a; }
 
 body {
   font-family: "Merriweather", "Palatino", "Georgia", serif;
@@ -24,11 +25,13 @@ h1,
 h2 {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  color: #18131a; }
 
 h1 {
   border-bottom: 2px solid #18131a;
-  margin-bottom: 1.6rem; }
+  margin: 1.6rem 3.2rem;
+  font-size: 3.6rem; }
 
 p {
   text-align: justify;
@@ -43,6 +46,12 @@ nav {
   font-family: "Merriweather", "Palatino", "Georgia", serif;
   font-size: 1.8rem;
   font-weight: 600; }
+
+.button {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase; }
 
 .hero__image-container {
   overflow: hidden;
@@ -60,7 +69,7 @@ nav {
 nav {
   padding: 2rem 2rem;
   background-color: #401225;
-  color: #bf923f;
+  color: #e2e7e7;
   font-size: 2rem;
   font-weight: 600;
   box-shadow: 0px 0px 15px 0px rgba(57, 55, 58, 0.5);
@@ -112,4 +121,19 @@ nav {
   margin: 0 3.2rem 3.2rem;
   padding: 1.6rem;
   background-color: #ffe36d;
-  color: #8c2a3c; }
+  color: #8c2a3c;
+  border-radius: 3px; }
+
+.button {
+  background-color: #8c2a3c;
+  box-shadow: none;
+  border: none;
+  color: #e2e7e7;
+  padding: 1.6rem;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px; }
+  .button--dark {
+    background-color: #401225;
+    color: #e2e7e7; }

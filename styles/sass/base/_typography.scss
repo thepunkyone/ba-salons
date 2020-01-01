@@ -14,11 +14,13 @@ h2 {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   text-align: center;
+  color: $colour-black;
 }
 
 h1 {
   border-bottom: 2px solid $colour-black;
-  margin-bottom: gutter(2);
+  margin: gutter(2) gutter(4);
+  font-size: 3.6rem;
 }
 
 p {
@@ -36,4 +38,11 @@ nav {
   font-family: "Merriweather", "Palatino", "Georgia", serif;
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+.button {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
