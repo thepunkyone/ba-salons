@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,600,600i&display=swap&subset=cyrillic,latin-ext");
 *,
 *::after,
 *::before {
@@ -10,6 +11,30 @@ html {
 
 body {
   box-sizing: border-box; }
+
+body {
+  font-family: "Merriweather", "Palatino", "Georgia", serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1,
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  text-align: center; }
+
+nav {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.quote {
+  font-family: "Merriweather", "Palatino", "Georgia", serif;
+  font-size: 1.8rem;
+  font-weight: 600; }
 
 .hero__image-container {
   overflow: hidden;
@@ -36,11 +61,11 @@ nav {
 
 .colour {
   width: 100%;
-  height: 200px; }
+  min-height: 200px; }
 
 .colour1 {
   background-color: #ffe36d;
-  color: #39373a;
+  color: #18131a;
   font-size: 1.6rem; }
 
 .colour2 {
@@ -74,3 +99,9 @@ nav {
 
 .colour9 {
   background-color: #e2e7e7; }
+
+.quote {
+  margin: 0 3.2rem 3.2rem;
+  padding: 1.6rem;
+  background-color: #ffe36d;
+  color: #8c2a3c; }

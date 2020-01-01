@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,600,600i&display=swap&subset=cyrillic,latin-ext");
+
+body {
+  font-family: "Merriweather", "Palatino", "Georgia", serif;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+nav {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.quote {
+  font-family: "Merriweather", "Palatino", "Georgia", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
