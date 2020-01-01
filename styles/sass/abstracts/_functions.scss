@@ -1,0 +1,5 @@
+@import "variables";
+
+@function gutter($count) {
+  @return $gutter * $count;
+}
