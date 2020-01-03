@@ -68,8 +68,8 @@ nav {
 
 nav {
   padding: 2rem 2rem;
-  background-color: #401225;
-  color: #e2e7e7;
+  color: #c7a000;
+  background-color: #57202a;
   font-size: 2rem;
   font-weight: 600;
   box-shadow: 0px 0px 15px 0px rgba(57, 55, 58, 0.5);
@@ -78,62 +78,29 @@ nav {
 
 .colour {
   width: 100%;
-  min-height: 200px; }
-
-.colour1 {
-  background-color: #ffe36d;
-  color: #18131a;
-  font-size: 1.6rem; }
-
-.colour2 {
-  background-color: #8c2a3c;
-  color: #ebf2f1;
-  font-size: 1.6rem; }
-
-.colour3 {
-  background-color: #401225;
-  color: #ebf2f1;
-  font-size: 1.6rem; }
-
-.colour4 {
-  background-color: #f7ac99;
-  color: #18131a;
-  font-size: 1.6rem; }
-
-.colour5 {
-  background-color: #bf923f;
-  color: #18131a;
-  font-size: 1.6rem; }
-
-.colour6 {
-  background-color: #ebf2f1; }
-
-.colour7 {
-  background-color: #39373a; }
-
-.colour8 {
-  background-color: #18131a; }
-
-.colour9 {
-  background-color: #e2e7e7; }
+  min-height: 200px;
+  background-color: #fffffd; }
 
 .quote {
   margin: 0 3.2rem 3.2rem;
   padding: 1.6rem;
   background-color: #ffe36d;
-  color: #8c2a3c;
+  color: #c7a000;
   border-radius: 3px; }
 
 .button {
-  background-color: #8c2a3c;
+  background-color: #8c3545;
   box-shadow: none;
   border: none;
-  color: #e2e7e7;
+  color: #fffffd;
   padding: 1.6rem;
   width: 200px;
   display: block;
   margin: 0 auto;
   border-radius: 3px; }
   .button--dark {
-    background-color: #401225;
-    color: #e2e7e7; }
+    background-color: #57202a;
+    color: #c7a000; }
+  .button--gold {
+    background-color: #c7a000;
+    color: #fffffd; }

@@ -15,8 +15,8 @@
 
 nav {
   padding: 2rem 2rem;
-  background-color: $colour-secondary-dark;
-  color: $colour-grey-light;
+  color: $color-primary-1;
+  background-color: $colour-tertiary-dark;
   font-size: 2rem;
   font-weight: 600;
   box-shadow: 0px 0px 15px 0px rgba($colour-grey-dark, 0.5);
@@ -27,67 +27,22 @@ nav {
 .colour {
   width: 100%;
   min-height: 200px;
-}
-
-.colour1 {
-  background-color: $colour-primary;
-  color: $colour-black;
-  font-size: 1.6rem;
-}
-
-.colour2 {
-  background-color: $colour-secondary;
-  color: $colour-white;
-  font-size: 1.6rem;
-}
-
-.colour3 {
-  background-color: $colour-secondary-dark;
-  color: $colour-white;
-  font-size: 1.6rem;
-}
-
-.colour4 {
-  background-color: $colour-secondary-light;
-  color: $colour-black;
-  font-size: 1.6rem;
-}
-
-.colour5 {
-  background-color: $colour-tertiary;
-  color: $colour-black;
-  font-size: 1.6rem;
-}
-
-.colour6 {
   background-color: $colour-white;
-}
-
-.colour7 {
-  background-color: $colour-grey-dark;
-}
-
-.colour8 {
-  background-color: $colour-black;
-}
-
-.colour9 {
-  background-color: $colour-grey-light;
 }
 
 .quote {
   margin: 0 gutter(4) gutter(4);
   padding: gutter(2);
   background-color: $colour-primary;
-  color: $colour-secondary;
+  color: $color-primary-1;
   border-radius: 3px;
 }
 
 .button {
-  background-color: $colour-secondary;
+  background-color: $colour-tertiary;
   box-shadow: none;
   border: none;
-  color: $colour-grey-light;
+  color: $colour-white;
   padding: gutter(2);
   width: 200px;
   display: block;
@@ -95,7 +50,12 @@ nav {
   border-radius: 3px;
 
   &--dark {
-    background-color: $colour-secondary-dark;
-    color: $colour-grey-light;
+    background-color: $colour-tertiary-dark;
+    color: $color-primary-1;
+  }
+
+  &--gold {
+    background-color: $color-primary-1;
+    color: $colour-white;
   }
 }
