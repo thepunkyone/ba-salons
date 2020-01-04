@@ -3,3 +3,10 @@
 @function gutter($count) {
   @return $gutter * $count;
 }
+
+@function responsive($min-size, $max-size) {
+  @return calc(
+    #{$min-size}px + (#{$max-size} - #{$min-size}) *
+      ((100vw - 300px) / (1600 - 300))
+  );
+}

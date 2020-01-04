@@ -13,10 +13,23 @@
   top: 50%;
 }
 
+.hero__image-overlay {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba($colour-primary, 0.3),
+  //   rgba($colour-secondary, 0.3)
+  // );
+}
+
 nav {
   padding: 2rem 2rem;
-  color: $color-primary-1;
-  background-color: $colour-tertiary-dark;
+  color: $colour-primary-dark;
+  background-color: $colour-secondary-dark;
   font-size: 2rem;
   font-weight: 600;
   box-shadow: 0px 0px 15px 0px rgba($colour-grey-dark, 0.5);
@@ -34,12 +47,12 @@ nav {
   margin: 0 gutter(4) gutter(4);
   padding: gutter(2);
   background-color: $colour-primary;
-  color: $color-primary-1;
+  color: $colour-primary-dark;
   border-radius: 3px;
 }
 
 .button {
-  background-color: $colour-tertiary;
+  background-color: $colour-secondary;
   box-shadow: none;
   border: none;
   color: $colour-white;
@@ -50,12 +63,12 @@ nav {
   border-radius: 3px;
 
   &--dark {
-    background-color: $colour-tertiary-dark;
-    color: $color-primary-1;
+    background-color: $colour-secondary-dark;
+    color: $colour-primary-dark;
   }
 
   &--gold {
-    background-color: $color-primary-1;
+    background-color: $colour-primary-dark;
     color: $colour-white;
   }
 }

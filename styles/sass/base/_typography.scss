@@ -2,7 +2,7 @@
 
 body {
   font-family: "Merriweather", "Palatino", "Georgia", serif;
-  font-size: $default-font-size;
+  font-size: responsive(14, 18);
   line-height: 1.7;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
