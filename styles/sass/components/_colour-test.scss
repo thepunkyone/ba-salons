@@ -1,4 +1,4 @@
-.hero__image-container {
+.hero__container {
   overflow: hidden;
   padding-top: -50vh;
   height: 50vh;
@@ -26,6 +26,17 @@
   // );
 }
 
+.hero__logo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: gutter(2);
+  left: gutter(2);
+  background: rgba($colour-secondary-dark, 0.6);
+  border-radius: 300px;
+}
+
 nav {
   padding: 2rem 2rem;
   color: $colour-primary-dark;
@@ -35,16 +46,20 @@ nav {
   box-shadow: 0px 0px 15px 0px rgba($colour-grey-dark, 0.5);
   position: relative;
   z-index: 5;
+  @include responsive-gutters;
 }
 
 .colour {
   width: 100%;
   min-height: 200px;
   background-color: $colour-white;
+  @include responsive-gutters;
+  & > * {
+    @include capped-width;
+  }
 }
 
 .quote {
-  margin: 0 gutter(4) gutter(4);
   padding: gutter(2);
   background-color: $colour-primary;
   color: $colour-primary-dark;

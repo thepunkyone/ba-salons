@@ -1,0 +1,45 @@
+//MEDIA QUERIES FOR RESPONSIVE BREAKPOINTS
+@mixin below($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin between($firstWidth, $secondWidth) {
+  @media screen and (min-width: $firstWidth) and (max-width: $secondWidth) {
+    @content;
+  }
+}
+
+@mixin above($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+//RESPONSIVE GUTTERS
+@mixin responsive-gutters {
+  @include below($small) {
+    padding-left: gutter(1);
+    padding-right: gutter(1);
+  }
+
+  @include between($small, $large) {
+    padding-left: gutter(2);
+    padding-right: gutter(2);
+  }
+
+  @include above($large) {
+    padding-left: gutter(3);
+    padding-right: gutter(3);
+  }
+}
+
+//CAPPED WIDTH
+@mixin capped-width {
+  @include above($xxlarge) {
+    max-width: $xxlarge;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

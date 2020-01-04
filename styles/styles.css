@@ -26,16 +26,16 @@ h2 {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   text-align: center;
-  color: #18131a; }
+  color: #231f25; }
 
 h1 {
-  border-bottom: 2px solid #18131a;
-  margin: 1.6rem 3.2rem;
+  border-bottom: 2px solid #231f25;
+  margin: 1.6rem 0;
   font-size: 3.6rem; }
 
 p {
   text-align: justify;
-  margin: 1rem; }
+  margin: 1rem 0; }
 
 nav {
   font-family: "Courier New", Courier, monospace;
@@ -53,7 +53,7 @@ nav {
   font-weight: 600;
   text-transform: uppercase; }
 
-.hero__image-container {
+.hero__container {
   overflow: hidden;
   padding-top: -50vh;
   height: 50vh;
@@ -73,6 +73,16 @@ nav {
   top: 0;
   left: 0; }
 
+.hero__logo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 1.6rem;
+  left: 1.6rem;
+  background: rgba(87, 32, 42, 0.6);
+  border-radius: 300px; }
+
 nav {
   padding: 2rem 2rem;
   color: #c7a000;
@@ -82,14 +92,42 @@ nav {
   box-shadow: 0px 0px 15px 0px rgba(57, 55, 58, 0.5);
   position: relative;
   z-index: 5; }
+  @media screen and (max-width: 600px) {
+    nav {
+      padding-left: 0.8rem;
+      padding-right: 0.8rem; } }
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    nav {
+      padding-left: 1.6rem;
+      padding-right: 1.6rem; } }
+  @media screen and (min-width: 960px) {
+    nav {
+      padding-left: 2.4rem;
+      padding-right: 2.4rem; } }
 
 .colour {
   width: 100%;
   min-height: 200px;
   background-color: #fffffd; }
+  @media screen and (max-width: 600px) {
+    .colour {
+      padding-left: 0.8rem;
+      padding-right: 0.8rem; } }
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    .colour {
+      padding-left: 1.6rem;
+      padding-right: 1.6rem; } }
+  @media screen and (min-width: 960px) {
+    .colour {
+      padding-left: 2.4rem;
+      padding-right: 2.4rem; } }
+  @media screen and (min-width: 1200px) {
+    .colour > * {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto; } }
 
 .quote {
-  margin: 0 3.2rem 3.2rem;
   padding: 1.6rem;
   background-color: #ffe36d;
   color: #c7a000;
