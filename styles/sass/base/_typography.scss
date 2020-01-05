@@ -1,8 +1,34 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("./fonts/RobotoSlab/RobotoSlab-Light.woff2") format("woff2"),
+    url("./fonts/RobotoSlab/RobotoSlab-Light.woff") format("woff"),
+    url("./fonts/RobotoSlab/RobotoSlab-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("./fonts/RobotoSlab/RobotoSlab-Regular.woff2") format("woff2"),
+    url("./fonts/RobotoSlab/RobotoSlab-Regular.woff") format("woff"),
+    url("./fonts/RobotoSlab/RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("./fonts/RobotoSlab/RobotoSlab-SemiBold.woff2") format("woff2"),
+    url("./fonts/RobotoSlab/RobotoSlab-SemiBold.woff") format("woff"),
+    url("./fonts/RobotoSlab/RobotoSlab-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
 body {
   font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: responsive(14, 18);
   line-height: 1.7;
-  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
