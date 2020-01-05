@@ -90,8 +90,10 @@ h1 {
   font-size: 3.6rem; }
 
 p {
-  text-align: justify;
   margin: 1rem 0; }
+  @media screen and (min-width: 600px) {
+    p {
+      text-align: justify; } }
 
 /* ==========================================================================
     Button
@@ -133,16 +135,16 @@ p {
   text-transform: uppercase; }
   @media screen and (max-width: 600px) {
     .navigation {
-      padding-left: 0.8rem;
-      padding-right: 0.8rem; } }
-  @media screen and (min-width: 600px) and (max-width: 960px) {
-    .navigation {
       padding-left: 1.6rem;
       padding-right: 1.6rem; } }
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    .navigation {
+      padding-left: 3.2rem;
+      padding-right: 3.2rem; } }
   @media screen and (min-width: 960px) {
     .navigation {
-      padding-left: 2.4rem;
-      padding-right: 2.4rem; } }
+      padding-left: 8rem;
+      padding-right: 8rem; } }
 
 /* ==========================================================================
     Quote
@@ -208,18 +210,18 @@ p {
 ========================================================================== */
 @media screen and (max-width: 600px) {
   .section {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem; } }
-
-@media screen and (min-width: 600px) and (max-width: 960px) {
-  .section {
     padding-left: 1.6rem;
     padding-right: 1.6rem; } }
 
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .section {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem; } }
+
 @media screen and (min-width: 960px) {
   .section {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem; } }
+    padding-left: 8rem;
+    padding-right: 8rem; } }
 
 @media screen and (min-width: 1200px) {
   .section > * {

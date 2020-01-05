@@ -28,18 +28,18 @@
 
 @mixin responsive-gutters {
   @include below($small) {
-    padding-left: gutter(1);
-    padding-right: gutter(1);
-  }
-
-  @include between($small, $large) {
     padding-left: gutter(2);
     padding-right: gutter(2);
   }
 
+  @include between($small, $large) {
+    padding-left: gutter(4);
+    padding-right: gutter(4);
+  }
+
   @include above($large) {
-    padding-left: gutter(3);
-    padding-right: gutter(3);
+    padding-left: gutter(10);
+    padding-right: gutter(10);
   }
 }
 
