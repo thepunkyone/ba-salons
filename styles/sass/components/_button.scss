@@ -1,0 +1,28 @@
+/* ==========================================================================
+    Button
+========================================================================== */
+
+.button {
+  background-color: $colour-secondary;
+  border: none;
+  box-shadow: none;
+  color: $colour-white;
+  padding: gutter(2) gutter(2.5);
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+  font-family: "Courier New", Courier, "Roboto Slab", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &--dark {
+    background-color: $colour-secondary-dark;
+    color: $colour-primary-dark;
+  }
+
+  &--gold {
+    background-color: $colour-primary-dark;
+  }
+}

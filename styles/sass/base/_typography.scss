@@ -1,3 +1,10 @@
+/* ==========================================================================
+    Typography
+========================================================================== */
+
+/*  Font Imports
+========================================================================== */
+
 @font-face {
   font-family: "Roboto Slab";
   src: url("./fonts/RobotoSlab/RobotoSlab-Light.woff2") format("woff2"),
@@ -25,9 +32,13 @@
   font-style: normal;
 }
 
+/*  Font Use
+========================================================================== */
+
 body {
   font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: responsive(14, 18);
+  color: $colour-grey-dark;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -50,23 +61,4 @@ h1 {
 p {
   text-align: justify;
   margin: 1rem 0;
-}
-
-nav {
-  font-family: "Courier New", Courier, "Roboto Slab", serif;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.quote {
-  font-family: "Roboto Slab", "Palatino", "Georgia", serif;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-.button {
-  font-family: "Courier New", Courier, "Roboto Slab", serif;
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
 }

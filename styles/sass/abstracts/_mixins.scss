@@ -1,4 +1,10 @@
-//MEDIA QUERIES FOR RESPONSIVE BREAKPOINTS
+/* ==========================================================================
+    Mixins
+========================================================================== */
+
+/*  Media Queries
+========================================================================== */
+
 @mixin below($width) {
   @media screen and (max-width: $width) {
     @content;
@@ -17,7 +23,9 @@
   }
 }
 
-//RESPONSIVE GUTTERS
+/*  Responsive Gutters
+========================================================================== */
+
 @mixin responsive-gutters {
   @include below($small) {
     padding-left: gutter(1);
@@ -35,7 +43,9 @@
   }
 }
 
-//CAPPED WIDTH
+/*  Capped Width
+========================================================================== */
+
 @mixin capped-width {
   @include above($xxlarge) {
     max-width: $xxlarge;

@@ -1,0 +1,19 @@
+/* ==========================================================================
+    Navigation
+========================================================================== */
+
+.navigation {
+  padding: 2rem 2rem;
+  color: $colour-primary-dark;
+  background-color: $colour-secondary-dark;
+  font-size: 2rem;
+  font-weight: 600;
+  box-shadow: 0px 0px 15px 0px rgba($colour-grey-dark, 0.5);
+  position: relative;
+  z-index: 5;
+  font-family: "Courier New", Courier, "Roboto Slab", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @include responsive-gutters;
+}
