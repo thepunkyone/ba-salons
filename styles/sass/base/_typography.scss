@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,600,600i&display=swap&subset=cyrillic,latin-ext");
-
 body {
-  font-family: "Merriweather", "Palatino", "Georgia", serif;
+  font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: responsive(14, 18);
   line-height: 1.7;
   font-weight: 400;
@@ -11,7 +9,7 @@ body {
 
 h1,
 h2 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, "Roboto Slab", serif;
   text-transform: uppercase;
   text-align: center;
   color: $colour-black;
@@ -29,19 +27,19 @@ p {
 }
 
 nav {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, "Roboto Slab", serif;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .quote {
-  font-family: "Merriweather", "Palatino", "Georgia", serif;
+  font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: 1.8rem;
   font-weight: 600;
 }
 
 .button {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, "Roboto Slab", serif;
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;

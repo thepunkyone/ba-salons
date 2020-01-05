@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,600,600i&display=swap&subset=cyrillic,latin-ext");
 *,
 *::after,
 *::before {
@@ -14,7 +13,7 @@ body {
   color: #39373a; }
 
 body {
-  font-family: "Merriweather", "Palatino", "Georgia", serif;
+  font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: calc( 14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.7;
   font-weight: 400;
@@ -23,7 +22,7 @@ body {
 
 h1,
 h2 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, "Roboto Slab", serif;
   text-transform: uppercase;
   text-align: center;
   color: #231f25; }
@@ -38,17 +37,17 @@ p {
   margin: 1rem 0; }
 
 nav {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, "Roboto Slab", serif;
   font-weight: 600;
   text-transform: uppercase; }
 
 .quote {
-  font-family: "Merriweather", "Palatino", "Georgia", serif;
+  font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: 1.8rem;
   font-weight: 600; }
 
 .button {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", Courier, "Roboto Slab", serif;
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase; }
@@ -82,6 +81,13 @@ nav {
   left: 1.6rem;
   background: rgba(87, 32, 42, 0.6);
   border-radius: 300px; }
+
+.hero__buttons {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex; }
 
 nav {
   padding: 2rem 2rem;
@@ -135,17 +141,26 @@ nav {
 
 .button {
   background-color: #8c3545;
-  box-shadow: none;
   border: none;
+  box-shadow: none;
   color: #fffffd;
-  padding: 1.6rem;
-  width: 200px;
+  padding: 1.6rem 2rem;
   display: block;
   margin: 0 auto;
-  border-radius: 3px; }
+  border-radius: 3px;
+  cursor: pointer; }
   .button--dark {
     background-color: #57202a;
     color: #c7a000; }
   .button--gold {
-    background-color: #c7a000;
-    color: #fffffd; }
+    background-color: #c7a000; }
+
+.hero__button {
+  box-shadow: 0px 0px 15px 0px rgba(57, 55, 58, 0.5); }
+  .hero__button:first-child {
+    margin-right: 1.6rem; }
+
+.icon {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  display: inline-block; }

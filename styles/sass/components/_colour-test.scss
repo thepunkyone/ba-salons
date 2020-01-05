@@ -19,11 +19,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba($colour-primary, 0.3),
-  //   rgba($colour-secondary, 0.3)
-  // );
 }
 
 .hero__logo {
@@ -35,6 +30,14 @@
   left: gutter(2);
   background: rgba($colour-secondary-dark, 0.6);
   border-radius: 300px;
+}
+
+.hero__buttons {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
 }
 
 nav {
@@ -68,14 +71,14 @@ nav {
 
 .button {
   background-color: $colour-secondary;
-  box-shadow: none;
   border: none;
+  box-shadow: none;
   color: $colour-white;
-  padding: gutter(2);
-  width: 200px;
+  padding: gutter(2) gutter(2.5);
   display: block;
   margin: 0 auto;
   border-radius: 3px;
+  cursor: pointer;
 
   &--dark {
     background-color: $colour-secondary-dark;
@@ -84,6 +87,19 @@ nav {
 
   &--gold {
     background-color: $colour-primary-dark;
-    color: $colour-white;
   }
+}
+
+.hero__button {
+  box-shadow: 0px 0px 15px 0px rgba($colour-grey-dark, 0.5);
+
+  &:first-child {
+    margin-right: gutter(2);
+  }
+}
+
+.icon {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
 }
