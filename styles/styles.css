@@ -72,21 +72,16 @@ body {
 body {
   font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: calc( 14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
-  color: #39373a;
   line-height: 1.7;
+  color: #39373a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 h1,
 h2 {
-  font-family: "Courier New", Courier, "Roboto Slab", serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: #231f25; }
+  font-family: "Courier New", Courier, "Roboto Slab", serif; }
 
 h1 {
-  border-bottom: 2px solid #231f25;
-  margin: 1.6rem 0;
   font-size: 3.6rem; }
 
 p {
@@ -117,6 +112,8 @@ p {
     color: #c7a000; }
   .button--gold {
     background-color: #c7a000; }
+  .button--tiny {
+    padding: 0.8rem 1.2rem; }
 
 /* ==========================================================================
     Navigation
@@ -191,6 +188,34 @@ p {
   background: rgba(87, 32, 42, 0.6);
   border-radius: 300px; }
 
+.hero__languages {
+  display: flex;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem; }
+  .hero__languages .button:first-child {
+    margin-right: 0.8rem; }
+
+.hero__title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 50%;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 10px #39373a;
+  transform: translateX(-50%); }
+
+.hero__heading {
+  font-size: 6rem;
+  line-height: 0.6; }
+
+.hero__subheading {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center; }
+
 .hero__buttons {
   position: absolute;
   bottom: 20%;
@@ -231,3 +256,10 @@ p {
 
 .section--about {
   background-color: #fffffd; }
+
+.section__heading {
+  margin: 1.6rem 0;
+  color: #231f25;
+  border-bottom: 2px solid #231f25;
+  text-transform: uppercase;
+  text-align: center; }

@@ -25,4 +25,8 @@
   &--gold {
     background-color: $colour-primary-dark;
   }
+
+  &--tiny {
+    padding: gutter(1) gutter(1.5);
+  }
 }

@@ -16,3 +16,11 @@
     background-color: $colour-white;
   }
 }
+
+.section__heading {
+  margin: gutter(2) 0;
+  color: $colour-black;
+  border-bottom: 2px solid $colour-black;
+  text-transform: uppercase;
+  text-align: center;
+}

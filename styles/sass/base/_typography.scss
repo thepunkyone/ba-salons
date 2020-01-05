@@ -38,8 +38,8 @@
 body {
   font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: responsive(14, 18);
-  color: $colour-grey-dark;
   line-height: 1.7;
+  color: $colour-grey-dark;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -47,14 +47,9 @@ body {
 h1,
 h2 {
   font-family: "Courier New", Courier, "Roboto Slab", serif;
-  text-transform: uppercase;
-  text-align: center;
-  color: $colour-black;
 }
 
 h1 {
-  border-bottom: 2px solid $colour-black;
-  margin: gutter(2) 0;
   font-size: 3.6rem;
 }
 
