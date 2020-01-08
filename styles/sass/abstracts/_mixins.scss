@@ -43,10 +43,10 @@
   }
 }
 
-/*  Capped Width
+/*  Clamped Width
 ========================================================================== */
 
-@mixin capped-width {
+@mixin clamped-width {
   @include above($xxlarge) {
     max-width: $xxlarge;
     margin-left: auto;

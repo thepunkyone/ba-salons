@@ -3,17 +3,37 @@
 ========================================================================== */
 
 .navigation {
-  padding: 2rem 2rem;
   color: $colour-primary-dark;
   background-color: $colour-secondary-dark;
-  font-size: 2rem;
-  font-weight: 600;
   box-shadow: 0px 0px 15px 0px rgba($colour-grey-dark, 0.5);
   position: relative;
   z-index: 5;
   font-family: "Courier New", Courier, "Roboto Slab", serif;
+  font-size: responsive(16, 22);
   font-weight: 600;
   text-transform: uppercase;
 
   @include responsive-gutters;
+}
+
+// Container
+
+.navigation__container {
+  @include clamped-width;
+}
+
+// Links
+
+.navigation__links {
+  display: flex;
+  list-style-type: none;
+}
+
+.navigation__link {
+  display: block;
+  padding: 2rem 2rem;
+
+  .navigation__links li:first-child & {
+    padding-left: 0;
+  }
 }

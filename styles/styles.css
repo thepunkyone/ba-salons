@@ -12,7 +12,7 @@
 ========================================================================== */
 /*  Responsive Gutters
 ========================================================================== */
-/*  Capped Width
+/*  Clamped Width
 ========================================================================== */
 /* ==========================================================================
     Variables
@@ -91,12 +91,12 @@ p {
       text-align: justify; } }
 
 /* ==========================================================================
-    Button
+    Partials
 ========================================================================== */
-.button {
+/*  Button
+========================================================================== */
+.button, .link-button {
   background-color: #8c3545;
-  border: none;
-  box-shadow: none;
   color: #fffffd;
   padding: 1.6rem 2rem;
   display: block;
@@ -105,7 +105,14 @@ p {
   font-family: "Courier New", Courier, "Roboto Slab", serif;
   font-size: 1.8rem;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: uppercase; }
+
+/* ==========================================================================
+    Button
+========================================================================== */
+.button {
+  border: none;
+  box-shadow: none;
   cursor: pointer; }
   .button--dark {
     background-color: #57202a;
@@ -116,18 +123,29 @@ p {
     padding: 0.8rem 1.2rem; }
 
 /* ==========================================================================
+    Link Button
+========================================================================== */
+.link-button {
+  text-decoration: none; }
+  .link-button--dark {
+    background-color: #57202a;
+    color: #c7a000; }
+  .link-button--gold {
+    background-color: #c7a000; }
+  .link-button--tiny {
+    padding: 0.8rem 1.2rem; }
+
+/* ==========================================================================
     Navigation
 ========================================================================== */
 .navigation {
-  padding: 2rem 2rem;
   color: #c7a000;
   background-color: #57202a;
-  font-size: 2rem;
-  font-weight: 600;
   box-shadow: 0px 0px 15px 0px rgba(57, 55, 58, 0.5);
   position: relative;
   z-index: 5;
   font-family: "Courier New", Courier, "Roboto Slab", serif;
+  font-size: calc( 16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 600;
   text-transform: uppercase; }
   @media screen and (max-width: 600px) {
@@ -142,6 +160,22 @@ p {
     .navigation {
       padding-left: 8rem;
       padding-right: 8rem; } }
+
+@media screen and (min-width: 1200px) {
+  .navigation__container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.navigation__links {
+  display: flex;
+  list-style-type: none; }
+
+.navigation__link {
+  display: block;
+  padding: 2rem 2rem; }
+  .navigation__links li:first-child .navigation__link {
+    padding-left: 0; }
 
 /* ==========================================================================
     Quote
