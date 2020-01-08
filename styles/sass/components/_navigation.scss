@@ -19,21 +19,42 @@
 // Container
 
 .navigation__container {
+  display: flex;
+  justify-content: space-between;
+
   @include clamped-width;
 }
 
-// Links
+// Links and Contacts
 
-.navigation__links {
+.navigation__links,
+.navigation__contacts {
   display: flex;
   list-style-type: none;
 }
 
+.navigation__contacts {
+  align-items: center;
+  font-size: responsive(14, 17);
+}
+
 .navigation__link {
   display: block;
-  padding: 2rem 2rem;
+  padding: 3rem 2rem;
+
+  .navigation__contacts & {
+    padding: 3rem 1.4rem;
+  }
 
   .navigation__links li:first-child & {
     padding-left: 0;
+  }
+
+  .navigation__contacts li:first-child & {
+    padding-left: 2rem;
+  }
+
+  .navigation__contacts li:last-child & {
+    padding-right: 0;
   }
 }
