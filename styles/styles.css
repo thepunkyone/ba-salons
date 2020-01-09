@@ -198,6 +198,27 @@ p {
     padding-right: 0; }
 
 /* ==========================================================================
+    Parallax Image
+========================================================================== */
+.parallax-image {
+  position: relative;
+  height: 40vh;
+  padding-top: 40vh;
+  overflow: hidden; }
+  .parallax-image__image {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    transform: translateY(-30%); }
+  .parallax-image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(180deg, rgba(255, 227, 109, 0.3), rgba(140, 53, 69, 0.3)); }
+
+/* ==========================================================================
     Quote
 ========================================================================== */
 .quote {
@@ -312,8 +333,13 @@ p {
   background-color: #fffffd; }
 
 .section__heading {
-  margin: 1.6rem 0;
+  margin: 4.8rem 0 4rem;
   color: #231f25;
   border-bottom: 2px solid #231f25;
   text-transform: uppercase;
   text-align: center; }
+
+/*  Quote
+========================================================================== */
+.about__quote {
+  margin-bottom: 2.4rem; }

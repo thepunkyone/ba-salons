@@ -18,9 +18,16 @@
 }
 
 .section__heading {
-  margin: gutter(2) 0;
+  margin: gutter(6) 0 gutter(5);
   color: $colour-black;
   border-bottom: 2px solid $colour-black;
   text-transform: uppercase;
   text-align: center;
+}
+
+/*  Quote
+========================================================================== */
+
+.about__quote {
+  margin-bottom: gutter(3);
 }
