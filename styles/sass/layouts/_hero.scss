@@ -25,6 +25,12 @@
   position: absolute;
   top: 0;
   left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba($colour-primary, 0.4),
+    rgba($colour-secondary, 0.4)
+  );
+  mix-blend-mode: multiply;
 }
 
 // Logo

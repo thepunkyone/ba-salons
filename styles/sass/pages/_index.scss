@@ -6,6 +6,10 @@
 ========================================================================== */
 
 .section {
+  background-color: $colour-white;
+  padding-top: gutter(6);
+  padding-bottom: gutter(6);
+
   @include responsive-gutters;
 
   & > * {
@@ -13,12 +17,12 @@
   }
 
   &--about {
-    background-color: $colour-white;
+    margin-bottom: 40vh;
   }
 }
 
 .section__heading {
-  margin: gutter(6) 0 gutter(5);
+  margin-bottom: gutter(5);
   color: $colour-black;
   border-bottom: 2px solid $colour-black;
   text-transform: uppercase;
