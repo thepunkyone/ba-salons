@@ -69,6 +69,12 @@ body {
   font-weight: 600;
   font-style: normal; }
 
+@font-face {
+  font-family: "American Typewriter";
+  src: url("./fonts/AmericanTypewriter/AmericanTypewriter.woff") format("woff"), url("./fonts/AmericanTypewriter/AmericanTypewriter.woff2") format("woff2"), url("./fonts/AmericanTypewriter/AmericanTypewriter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 /*  Font Use
 ========================================================================== */
 body {
@@ -324,12 +330,16 @@ p {
   transform: translateX(-50%); }
 
 .hero__heading {
-  font-size: 6rem;
-  line-height: 0.6; }
+  font-family: "American Typewriter", "Roboto Slab", serif;
+  font-weight: normal;
+  font-size: 7rem;
+  letter-spacing: 0.2rem;
+  line-height: 1; }
 
 .hero__subheading {
   font-size: 2rem;
   font-weight: 600;
+  letter-spacing: 0.15rem;
   line-height: 1.5;
   text-align: center; }
 

@@ -32,6 +32,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "American Typewriter";
+  src: url("./fonts/AmericanTypewriter/AmericanTypewriter.woff") format("woff"),
+    url("./fonts/AmericanTypewriter/AmericanTypewriter.woff2") format("woff2"),
+    url("./fonts/AmericanTypewriter/AmericanTypewriter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*  Font Use
 ========================================================================== */
 
