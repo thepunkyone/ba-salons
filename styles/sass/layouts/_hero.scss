@@ -4,9 +4,17 @@
 
 .hero__container {
   overflow: hidden;
-  padding-top: -50vh;
-  height: 50vh;
   position: relative;
+
+  @include below($medium) {
+    padding-top: -60vh;
+    height: 60vh;
+  }
+
+  @include above($medium) {
+    padding-top: -80vh;
+    height: 80vh;
+  }
 }
 
 // Image
@@ -21,7 +29,6 @@
 
 .hero__image-overlay {
   width: 100%;
-  height: 50vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -31,6 +38,14 @@
     rgba($colour-secondary, 0.4)
   );
   mix-blend-mode: multiply;
+
+  @include below($medium) {
+    height: 60vh;
+  }
+
+  @include above($medium) {
+    height: 80vh;
+  }
 }
 
 // Logo
