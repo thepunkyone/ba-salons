@@ -107,6 +107,7 @@ p {
   font-family: "Courier New", Courier, "Roboto Slab", serif;
   font-size: 1.8rem;
   font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase; }
 
 /* ==========================================================================
@@ -155,6 +156,7 @@ p {
   font-family: "Courier New", Courier, "Roboto Slab", serif;
   font-size: calc( 16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   z-index: 5; }
   @media screen and (max-width: 600px) {
