@@ -43,7 +43,14 @@
 
 .quick-actions__icon {
   display: block;
-  margin-bottom: gutter(3);
   color: rgba($colour-primary-dark, 0.6);
   font-size: 4em;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: gutter(3);
+
+  svg path {
+    fill: rgba($colour-primary-dark, 0.9);
+  }
 }

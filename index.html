@@ -3,10 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
-      src="https://kit.fontawesome.com/fd4a91969e.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
   </head>
   <body>
@@ -34,14 +30,18 @@
             <a
               class="link-button link-button--gold hero__button"
               href="tel:29161903"
-              ><i class="fas fa-phone-alt"></i> 29161903</a
             >
+              <span class="telefons inline-icon"></span>
+              <span>29161903</span>
+            </a>
             <a
               class="link-button link-button--gold hero__button"
               href="mailto:salons@ba-salons.lv"
               target="_top"
-              ><i class="fas fa-envelope"></i> salons@ba-salons.lv</a
             >
+              <span class="epasts inline-icon"></span>
+              <span>salons@ba-salons.lv</span>
+            </a>
           </div>
         </div>
       </hero>
@@ -55,17 +55,20 @@
           </ul>
           <ul class="navigation__contacts">
             <li>
-              <a class="link navigation__link" href="tel:29161903"
-                ><i class="fas fa-phone-alt"></i> 29161903</a
-              >
+              <a class="link navigation__link" href="tel:29161903">
+                <span class="telefons inline-icon"></span>
+                <span>29161903</span>
+              </a>
             </li>
             <li>
               <a
                 class="link navigation__link"
                 href="mailto:salons@ba-salons.lv"
                 target="_top"
-                ><i class="fas fa-envelope"></i> salons@ba-salons.lv</a
               >
+                <span class="epasts inline-icon"></span>
+                <span>salons@ba-salons.lv</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -101,22 +104,22 @@
         </section>
         <div class="quick-actions">
           <a class="quick-actions__card" href="#">
-            <i class="fas fa-book-open quick-actions__icon"></i>
+            <span id="masazas" class="quick-actions__icon"></span>
             Skatīt masāžu piedāvājumu
           </a>
 
           <a class="quick-actions__card" href="#">
-            <i class="fas fa-calendar-alt quick-actions__icon"></i>
+            <span id="kalendars" class="quick-actions__icon"></span>
             Pieteikties uz masāžu
           </a>
 
           <a class="quick-actions__card" href="#">
-            <i class="fas fa-spa quick-actions__icon"></i>
+            <span id="terapeite" class="quick-actions__icon"></span>
             Mūsu masāžas terapeite
           </a>
 
           <a class="quick-actions__card" href="#">
-            <i class="fas fa-map-marked-alt quick-actions__icon"></i>
+            <span id="karte" class="quick-actions__icon"></span>
             Kur mēs atrodamies
           </a>
         </div>
@@ -131,5 +134,6 @@
         </section>
       </main>
     </div>
+    <script src="dist/output.js"></script>
   </body>
 </html>

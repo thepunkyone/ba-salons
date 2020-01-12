@@ -1,0 +1,21 @@
+/* ==========================================================================
+    Inline Icon
+========================================================================== */
+
+.inline-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: gutter(1);
+  flex-shrink: 0;
+
+  svg path {
+    fill: currentColor;
+  }
+}
+
+// Email icon
+
+.epasts {
+  margin-top: -2px;
+}
