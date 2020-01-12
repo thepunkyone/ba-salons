@@ -6,7 +6,7 @@
   padding: gutter(2);
   background-color: $colour-primary;
   color: $colour-primary-dark;
-  border-radius: 3px;
+  border-radius: $border-radius;
   font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: responsive(17, 27);
   font-weight: 600;

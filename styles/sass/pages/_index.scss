@@ -17,7 +17,6 @@
   }
 
   &--about {
-    margin-bottom: 40vh;
   }
 }
 
@@ -34,4 +33,10 @@
 
 .about__quote {
   margin-bottom: gutter(3);
+}
+
+/*  Quick Actions
+========================================================================== */
+.quick-actions {
+  margin-bottom: 40vh;
 }

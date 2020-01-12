@@ -1,0 +1,49 @@
+/* ==========================================================================
+    Quick Actions
+========================================================================== */
+
+// Grid
+
+.quick-actions {
+  display: flex;
+  background: $colour-secondary-grey;
+  padding-top: gutter(5);
+  padding-bottom: gutter(5);
+
+  @include responsive-gutters;
+}
+
+// Card
+
+.quick-actions__card {
+  position: relative;
+  width: 25%;
+  margin: 0 gutter(2);
+  padding: gutter(6) gutter(3) gutter(4);
+  border-radius: $border-radius;
+  color: $colour-primary-dark;
+  font-family: "Courier New", Courier, "Roboto Slab", serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: inset 0px 0px 0px 4px rgba($colour-primary-dark, 0.6);
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.quick-actions__icon {
+  display: block;
+  margin-bottom: gutter(3);
+  color: rgba($colour-primary-dark, 0.6);
+  font-size: 4em;
+}

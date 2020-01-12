@@ -21,6 +21,8 @@
 ========================================================================== */
 /*  Colours
 ========================================================================== */
+/*  Border Radius
+========================================================================== */
 /*  Default Font Size
 ========================================================================== */
 /*  Responsive Breakpoints
@@ -325,6 +327,54 @@ p {
     margin-right: 1.6rem; }
 
 /* ==========================================================================
+    Quick Actions
+========================================================================== */
+.quick-actions {
+  display: flex;
+  background: #3d2125;
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+  @media screen and (max-width: 600px) {
+    .quick-actions {
+      padding-left: 1.6rem;
+      padding-right: 1.6rem; } }
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    .quick-actions {
+      padding-left: 3.2rem;
+      padding-right: 3.2rem; } }
+  @media screen and (min-width: 960px) {
+    .quick-actions {
+      padding-left: 8rem;
+      padding-right: 8rem; } }
+
+.quick-actions__card {
+  position: relative;
+  width: 25%;
+  margin: 0 1.6rem;
+  padding: 4.8rem 2.4rem 3.2rem;
+  border-radius: 3px;
+  color: #c7a000;
+  font-family: "Courier New", Courier, "Roboto Slab", serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: inset 0px 0px 0px 4px rgba(199, 160, 0, 0.6); }
+  .quick-actions__card:first-child {
+    margin-left: 0; }
+  .quick-actions__card:last-child {
+    margin-right: 0; }
+
+.quick-actions__icon {
+  display: block;
+  margin-bottom: 2.4rem;
+  color: rgba(199, 160, 0, 0.6);
+  font-size: 4em; }
+
+/* ==========================================================================
     Index Page
 ========================================================================== */
 /*  Sections
@@ -350,8 +400,6 @@ p {
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto; } }
-  .section--about {
-    margin-bottom: 40vh; }
 
 .section__heading {
   margin-bottom: 4rem;
@@ -364,3 +412,8 @@ p {
 ========================================================================== */
 .about__quote {
   margin-bottom: 2.4rem; }
+
+/*  Quick Actions
+========================================================================== */
+.quick-actions {
+  margin-bottom: 40vh; }
