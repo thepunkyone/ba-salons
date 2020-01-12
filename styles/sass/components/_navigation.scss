@@ -3,15 +3,16 @@
 ========================================================================== */
 
 .navigation {
+  position: sticky;
+  top: 0;
   color: $colour-primary-dark;
   background-color: $colour-secondary-dark;
   box-shadow: 0px 0px 15px 0px rgba($colour-grey-dark, 0.5);
-  position: relative;
-  z-index: 5;
   font-family: "Courier New", Courier, "Roboto Slab", serif;
   font-size: responsive(16, 22);
   font-weight: 600;
   text-transform: uppercase;
+  z-index: 5;
 
   @include responsive-gutters;
 }
