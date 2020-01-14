@@ -1,0 +1,91 @@
+/* ==========================================================================
+    Columns
+========================================================================== */
+
+// Layout
+
+.columns {
+  @include above($medium) {
+    display: flex;
+  }
+}
+
+// Column
+
+.columns__column {
+  @include above($medium) {
+    margin: 0 gutter(2);
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & p {
+      text-align: left;
+    }
+
+    & p:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+// Image column
+
+.columns__column--image-wrapper {
+  position: relative;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  @include below($medium) {
+    margin-bottom: gutter(3);
+    padding-top: 50vw;
+  }
+}
+
+// Image
+
+.columns__image {
+  width: 100%;
+
+  @include below($medium) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+// Image overlay
+
+.columns__image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba($colour-primary, 0.3),
+    rgba($colour-secondary, 0.3)
+  );
+  mix-blend-mode: soft-light;
+}
+
+// Two column layout
+
+.columns--two {
+  @include above($medium) {
+    & .columns__column {
+      width: 50%;
+
+      & p:first-child {
+        margin-top: -0.5em;
+      }
+    }
+  }
+}

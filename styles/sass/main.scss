@@ -10,11 +10,12 @@
 @import "components/inline-icon";
 @import "components/link";
 @import "components/link-button";
-@import "components/navigation";
 @import "components/parallax";
 @import "components/quote";
 
+@import "layouts/columns";
 @import "layouts/hero";
+@import "layouts/navigation";
 @import "layouts/quick-actions";
 
 @import "pages/index";

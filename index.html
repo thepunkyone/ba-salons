@@ -7,44 +7,46 @@
   </head>
   <body>
     <div class="parallax__wrapper">
-      <hero>
-        <div class="hero__container">
-          <img
-            class="hero__image"
-            src="./images/hero.jpg"
-            alt="BA Salons masāžas kabinets"
-          />
-          <div class="hero__image-overlay"></div>
-          <!-- <img class="hero__logo" src="./images/logocircle.svg" /> -->
-          <div class="hero__languages">
-            <a class="link-button link-button--tiny" href="#">LV</a>
-            <a class="link-button link-button--tiny" href="#">RU</a>
+      <header>
+        <hero>
+          <div class="hero__container">
+            <img
+              class="hero__image"
+              src="./images/hero.jpg"
+              alt="BA Salons masāžas kabinets"
+            />
+            <div class="hero__image-overlay"></div>
+            <!-- <img class="hero__logo" src="./images/logocircle.svg" /> -->
+            <div class="hero__languages">
+              <a class="link-button link-button--tiny" href="#">LV</a>
+              <a class="link-button link-button--tiny" href="#">RU</a>
+            </div>
+            <div class="hero__title">
+              <h1 class="hero__heading">BA Salons</h1>
+              <p class="hero__subheading">
+                Ajurvēdiskās, Klasiskās, SPA un Reflektorās Masāžas
+              </p>
+            </div>
+            <div class="hero__buttons">
+              <a
+                class="link-button link-button--gold hero__button"
+                href="tel:29161903"
+              >
+                <span class="telefons inline-icon"></span>
+                <span>29161903</span>
+              </a>
+              <a
+                class="link-button link-button--gold hero__button"
+                href="mailto:salons@ba-salons.lv"
+                target="_top"
+              >
+                <span class="epasts inline-icon"></span>
+                <span>salons@ba-salons.lv</span>
+              </a>
+            </div>
           </div>
-          <div class="hero__title">
-            <h1 class="hero__heading">BA Salons</h1>
-            <p class="hero__subheading">
-              Ajurvēdiskās, Klasiskās, SPA un Reflektorās Masāžas
-            </p>
-          </div>
-          <div class="hero__buttons">
-            <a
-              class="link-button link-button--gold hero__button"
-              href="tel:29161903"
-            >
-              <span class="telefons inline-icon"></span>
-              <span>29161903</span>
-            </a>
-            <a
-              class="link-button link-button--gold hero__button"
-              href="mailto:salons@ba-salons.lv"
-              target="_top"
-            >
-              <span class="epasts inline-icon"></span>
-              <span>salons@ba-salons.lv</span>
-            </a>
-          </div>
-        </div>
-      </hero>
+        </hero>
+      </header>
       <nav class="navigation">
         <div class="navigation__container">
           <ul class="navigation__links">
@@ -75,7 +77,7 @@
       </nav>
       <main class="parallax__static">
         <section class="section section--about">
-          <h1 class="section__heading">Par Mums</h1>
+          <h2 class="section__heading">Par Mums</h2>
           <p class="quote about__quote">
             Tā ir laba sajūta - būt enerģiskam, mundram, stresa nenomāktam un
             skaistam. Tad arī pasaule apkārt liekas labāka un skaistāka un
@@ -124,15 +126,49 @@
           </a>
         </div>
         <div class="parallax__image parallax__image--about"></div>
-        <section class="section">
-          <p>
-            Ir daudz iespēju nodarboties ar dažādām lietām, kas sirdij tuvas,
-            apmeklēt vietas un pasākumus, kas sniedz prieku un iedvesmu. Ja
-            atnāksiet pie mums uz salonu, ļoti iespējams, ka šeit smelsieties
-            pozitīvas emocijas un iegūsiet enerģiju un dzīvesprieku.
+        <section class="section section--biruta">
+          <h2 class="section__heading">Masiere Biruta</h2>
+          <div class="columns columns--two">
+            <div class="columns__column columns__column--image-wrapper">
+              <img
+                class="columns__image"
+                src="images/birutaaunina.jpg"
+                alt="Masiere Biruta"
+              />
+              <div class="columns__image-overlay"></div>
+            </div>
+            <div class="columns__column">
+              <p>
+                Masāžu veic sertificēta masiere Biruta, kas masāžas prasmes
+                apguvusi pie Tamāras Rimšas, Natālijas Jakovļevas un pie Ingas
+                Šivas centrā.
+              </p>
+              <p>
+                Biruta: "Jau vairāk kā 20 gadus apgūstu dažādus kursus Šivas
+                centrā (ajurvēda, vēdiskā numeroloģija, cilvēka raksturojums pēc
+                ārējā izskata, roku līnijām, kurss par emocijām, hatha joga,
+                mudras - pirkstu un roku pozas, kas palīdz mainīt domāšanu un
+                uzlabot veselību, vaštu šastra - par to, kā organizēt objektus
+                atkarībā no debess pusēm, rasa joga - zinātne par emocijām, un
+                vēl ļoti daudz ko citu). Esmu apmeklējusi arī nodarbības centrā
+                Raduga 2005, no kurām īpaši gribu atzīmēt kursu par dažādu
+                slimību emocionālajiem cēloņiem. Man ir 2. pakāpe Reiki.
+              </p>
+              <p>
+                Nozīmīgs pavērsiens manā dzīvē bija pirmais Indijas apmeklējums
+                2007. gadā. Ajurvēdiskās masāžas kursu apguve man bija loģisks
+                turpinājums pasaules izzināšanā, interesē par vēdiskajām zinībām
+                un sava ceļa meklējumos."
+              </p>
+            </div>
+          </div>
+          <p class="quote biruta__quote">
+            "Novēlu ikvienam atrast savu vietu dzīvē un sasniegt savas
+            virsotnes!"
           </p>
         </section>
       </main>
+      <footer></footer>
     </div>
     <script src="dist/output.js"></script>
   </body>

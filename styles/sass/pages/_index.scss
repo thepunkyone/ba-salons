@@ -2,7 +2,7 @@
     Index Page
 ========================================================================== */
 
-/*  Sections
+/*  Section
 ========================================================================== */
 
 .section {
@@ -18,7 +18,14 @@
 
   &--about {
   }
+
+  &--biruta {
+    background-color: $colour-primary;
+    color: $colour-black;
+  }
 }
+
+// Section heading
 
 .section__heading {
   margin-bottom: gutter(5);
@@ -26,6 +33,14 @@
   border-bottom: 2px solid $colour-black;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+// Section image
+
+.section__image {
+  width: 100%;
+  border-radius: $border-radius;
 }
 
 /*  Quote
@@ -33,6 +48,11 @@
 
 .about__quote {
   margin-bottom: gutter(3);
+}
+
+.biruta__quote {
+  background-color: $colour-secondary-light;
+  color: $colour-grey-dark;
 }
 
 /*  Quick Actions
