@@ -14,6 +14,8 @@
 ========================================================================== */
 /*  Clamped Width
 ========================================================================== */
+/*  Parallax Gap
+========================================================================== */
 /* ==========================================================================
     Variables
 ========================================================================== */
@@ -100,6 +102,13 @@ p {
       text-align: justify; } }
 
 /* ==========================================================================
+    Utilities
+========================================================================== */
+@media screen and (min-width: 768px) {
+  .text-align-top {
+    margin-top: -0.5em; } }
+
+/* ==========================================================================
     Partials
 ========================================================================== */
 /*  Button
@@ -184,15 +193,21 @@ p {
 .parallax__image {
   height: 80vh;
   width: 100%;
-  background-image: linear-gradient(180deg, rgba(255, 227, 109, 0.6), rgba(140, 53, 69, 0.6)), url("../images/par-mums.jpg");
   background-blend-mode: hard-light;
   background-size: cover;
   background-position: 50% 50%;
   transform-origin: 0 0;
   transform: translateZ(-3px) translateX(-60%) scale(5.2);
   position: fixed;
-  margin-top: -60vh;
-  z-index: -100; }
+  margin-top: -70vh; }
+  .parallax__image--about {
+    background-image: linear-gradient(180deg, rgba(255, 227, 109, 0.6), rgba(140, 53, 69, 0.6)), url("../images/par-mums.jpg");
+    z-index: -10; }
+  .parallax__image--biruta {
+    background-image: linear-gradient(180deg, rgba(255, 227, 109, 0.6), rgba(140, 53, 69, 0.6)), url("../images/par-mums.jpg");
+    z-index: -20; }
+  .parallax__image--top {
+    z-index: -5; }
 
 /* ==========================================================================
     Quote
@@ -221,9 +236,7 @@ p {
     .columns__column:last-child {
       margin-right: 0; }
     .columns__column p {
-      text-align: left; }
-    .columns__column p:first-child {
-      margin-top: 0; } }
+      text-align: left; } }
 
 .columns__column--image-wrapper {
   position: relative;
@@ -254,9 +267,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .columns--two .columns__column {
-    width: 50%; }
-    .columns--two .columns__column p:first-child {
-      margin-top: -0.5em; } }
+    width: 50%; } }
 
 /* ==========================================================================
     Hero
@@ -266,11 +277,9 @@ p {
   position: relative; }
   @media screen and (max-width: 768px) {
     .hero__container {
-      padding-top: -60vh;
       height: 60vh; } }
   @media screen and (min-width: 768px) {
     .hero__container {
-      padding-top: -80vh;
       height: 80vh; } }
 
 .hero__image {
@@ -471,7 +480,7 @@ p {
 .section {
   background-color: #fffffd;
   padding-top: 4.8rem;
-  padding-bottom: 4.8rem; }
+  padding-bottom: 8rem; }
   @media screen and (max-width: 600px) {
     .section {
       padding-left: 1.6rem;
@@ -490,8 +499,10 @@ p {
       margin-left: auto;
       margin-right: auto; } }
   .section--biruta {
+    padding-top: 6.4rem;
     background-color: #ffe36d;
-    color: #231f25; }
+    color: #231f25;
+    margin-bottom: 80vh; }
 
 .section__heading {
   margin-bottom: 4rem;
@@ -517,4 +528,4 @@ p {
 /*  Quick Actions
 ========================================================================== */
 .quick-actions {
-  margin-bottom: 60vh; }
+  margin-bottom: 80vh; }

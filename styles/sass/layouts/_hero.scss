@@ -7,12 +7,10 @@
   position: relative;
 
   @include below($medium) {
-    padding-top: -60vh;
     height: 60vh;
   }
 
   @include above($medium) {
-    padding-top: -80vh;
     height: 80vh;
   }
 }

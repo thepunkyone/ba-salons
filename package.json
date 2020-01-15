@@ -7,7 +7,7 @@
     "watch:sass": "node-sass -w styles/sass/main.scss styles/styles.css",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
-    "build:svgs": "rollup -c"
+    "build:js": "rollup -c"
   },
   "repository": {
     "type": "git",

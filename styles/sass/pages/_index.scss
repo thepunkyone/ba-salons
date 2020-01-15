@@ -8,7 +8,7 @@
 .section {
   background-color: $colour-white;
   padding-top: gutter(6);
-  padding-bottom: gutter(6);
+  padding-bottom: gutter(10);
 
   @include responsive-gutters;
 
@@ -20,8 +20,11 @@
   }
 
   &--biruta {
+    padding-top: gutter(8);
     background-color: $colour-primary;
     color: $colour-black;
+
+    @include parallax-gap;
   }
 }
 
@@ -57,6 +60,7 @@
 
 /*  Quick Actions
 ========================================================================== */
+
 .quick-actions {
-  margin-bottom: 60vh;
+  @include parallax-gap;
 }

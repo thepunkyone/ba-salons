@@ -27,10 +27,6 @@
     & p {
       text-align: left;
     }
-
-    & p:first-child {
-      margin-top: 0;
-    }
   }
 }
 
@@ -82,10 +78,6 @@
   @include above($medium) {
     & .columns__column {
       width: 50%;
-
-      & p:first-child {
-        margin-top: -0.5em;
-      }
     }
   }
 }

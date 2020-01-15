@@ -19,18 +19,35 @@
 .parallax__image {
   height: 80vh;
   width: 100%;
-  background-image: linear-gradient(
-      180deg,
-      rgba($colour-primary, 0.6),
-      rgba($colour-secondary, 0.6)
-    ),
-    url("../images/par-mums.jpg");
   background-blend-mode: hard-light;
   background-size: cover;
   background-position: 50% 50%;
   transform-origin: 0 0;
   transform: translateZ(-3px) translateX(-60%) scale(5.2);
   position: fixed;
-  margin-top: -60vh;
-  z-index: -100;
+  margin-top: -70vh;
+
+  &--about {
+    background-image: linear-gradient(
+        180deg,
+        rgba($colour-primary, 0.6),
+        rgba($colour-secondary, 0.6)
+      ),
+      url("../images/par-mums.jpg");
+    z-index: -10;
+  }
+
+  &--biruta {
+    background-image: linear-gradient(
+        180deg,
+        rgba($colour-primary, 0.6),
+        rgba($colour-secondary, 0.6)
+      ),
+      url("../images/par-mums.jpg");
+    z-index: -20;
+  }
+
+  &--top {
+    z-index: -5;
+  }
 }
