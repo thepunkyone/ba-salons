@@ -1,13 +1,13 @@
 const parallaxWrapper = document.getElementsByClassName("parallax__wrapper")[0];
 
-const addTopClassToParallax = () => {
+const addTopClassToParallax = offsetTop => {
   const sectionBiruta = document.getElementsByClassName("section--biruta")[0];
   const parallaxBiruta = document.getElementsByClassName(
     "parallax__image--biruta"
   )[0];
 
   const sectionOffsetTop = sectionBiruta.offsetTop;
-  const windowOffsetTop = parallaxWrapper.scrollTop;
+  const windowOffsetTop = offsetTop;
 
   const sectionIsInView = windowOffsetTop >= sectionOffsetTop + 500;
 
@@ -18,16 +18,6 @@ const addTopClassToParallax = () => {
   }
 };
 
-const throttle = (fn, wait) => {
-  var time = Date.now();
-  return () => {
-    if (time + wait - Date.now() < 0) {
-      fn();
-      time = Date.now();
-    }
-  };
-};
-
 const moveParallaxToTop = () => {
   document.onreadystatechange = () => {
     if (document.readyState === "complete") {
@@ -35,10 +25,21 @@ const moveParallaxToTop = () => {
     }
   };
 
-  parallaxWrapper.addEventListener(
-    "scroll",
-    throttle(addTopClassToParallax, 1000)
-  );
+  let last_known_scroll_position = 0;
+  let ticking = false;
+
+  parallaxWrapper.addEventListener("scroll", function(e) {
+    last_known_scroll_position = parallaxWrapper.scrollTop;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        addTopClassToParallax(last_known_scroll_position);
+        ticking = false;
+      });
+
+      ticking = true;
+    }
+  });
 };
 
 export default moveParallaxToTop;
