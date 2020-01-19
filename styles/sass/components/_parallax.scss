@@ -24,6 +24,7 @@
   transform-origin: 0 0;
   position: fixed;
   margin-top: -70vh;
+  opacity: 0;
 
   &--about {
     background-image: linear-gradient(
@@ -46,10 +47,10 @@
       url("../images/masazas-galds.jpg");
     background-blend-mode: hard-light;
     transform: translateZ(-2px) translateX(-20%) scale(3.6);
-    z-index: -20;
+    z-index: -10;
   }
 
   &--top {
-    z-index: -5;
+    opacity: 1;
   }
 }

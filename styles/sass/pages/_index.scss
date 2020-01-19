@@ -26,6 +26,10 @@
 
     @include parallax-gap;
   }
+
+  &--masazas {
+    background-color: $colour-primary-dark;
+  }
 }
 
 // Section heading

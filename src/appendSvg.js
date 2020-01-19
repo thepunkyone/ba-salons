@@ -1,5 +1,6 @@
 import telefons from "../svgs/icons/telefons.svg";
 import epasts from "../svgs/icons/epasts.svg";
+import chevronDown from "../svgs/icons/chevron-down.svg";
 
 import masazas from "../svgs/icons/masazas.svg";
 import kalendars from "../svgs/icons/kalendars.svg";
@@ -17,6 +18,12 @@ const appendSvg = () => {
 
   for (let i = 0; i < emailIcons.length; i++) {
     emailIcons[i].innerHTML = epasts;
+  }
+
+  const chevronDownIcons = document.getElementsByClassName("chevron-down");
+
+  for (let i = 0; i < chevronDownIcons.length; i++) {
+    chevronDownIcons[i].innerHTML = chevronDown;
   }
 
   document.getElementById("masazas").innerHTML = masazas;

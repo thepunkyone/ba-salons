@@ -1,0 +1,76 @@
+/* ==========================================================================
+    Massage Links
+========================================================================== */
+
+.massage-links {
+  display: flex;
+  margin-bottom: gutter(6);
+  padding-top: gutter(5);
+  padding-bottom: gutter(5);
+}
+
+.massage-links__card {
+  width: 25%;
+  margin: 0 gutter(2);
+  padding: gutter(4) gutter(3) gutter(4);
+  border-radius: $border-radius;
+  background-color: $colour-secondary-dark;
+  color: $colour-primary-dark;
+  font-family: "Courier New", Courier, "Roboto Slab", serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: center;
+  text-decoration: none;
+  // box-shadow: inset 0px 0px 0px 4px rgba($colour-secondary-grey, 0.9);
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.massage-links__image-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+  margin-bottom: gutter(3);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.massage-links__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.massage-links__image-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, $colour-primary, $colour-secondary);
+  mix-blend-mode: soft-light;
+}
+
+// Chevron down icon
+.chevron-down {
+  display: block;
+  width: gutter(3);
+  height: gutter(2);
+  margin: gutter(2) auto 0;
+
+  path {
+    fill: currentColor;
+  }
+}

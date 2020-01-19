@@ -1,18 +1,32 @@
 const parallaxWrapper = document.getElementsByClassName("parallax__wrapper")[0];
-const windowTop = parallaxWrapper.scrollTop;
 
 const addTopClassToParallax = offsetTop => {
+  const sectionAbout = document.getElementsByClassName("section--about")[0];
+  const parallaxAbout = document.getElementsByClassName(
+    "parallax__image--about"
+  )[0];
+
   const sectionBiruta = document.getElementsByClassName("section--biruta")[0];
   const parallaxBiruta = document.getElementsByClassName(
     "parallax__image--biruta"
   )[0];
 
-  const sectionOffsetTop = sectionBiruta.offsetTop;
+  const sectionAboutOffsetTop = sectionAbout.offsetTop;
+  const sectionBirutaOffsetTop = sectionBiruta.offsetTop;
   const windowOffsetTop = offsetTop;
 
-  const sectionIsInView = windowOffsetTop >= sectionOffsetTop + 500;
+  const sectionAboutIsInView =
+    windowOffsetTop >= sectionAboutOffsetTop + 500 &&
+    windowOffsetTop < sectionBirutaOffsetTop + 500;
+  const sectionBirutaIsInView = windowOffsetTop >= sectionBirutaOffsetTop + 500;
 
-  if (sectionIsInView) {
+  if (sectionAboutIsInView) {
+    parallaxAbout.classList.add("parallax__image--top");
+  } else {
+    parallaxAbout.classList.remove("parallax__image--top");
+  }
+
+  if (sectionBirutaIsInView) {
     parallaxBiruta.classList.add("parallax__image--top");
   } else {
     parallaxBiruta.classList.remove("parallax__image--top");
