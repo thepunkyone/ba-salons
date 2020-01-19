@@ -33,6 +33,7 @@
   };
 
   const parallaxWrapper = document.getElementsByClassName("parallax__wrapper")[0];
+  const windowTop = parallaxWrapper.scrollTop;
 
   const addTopClassToParallax = offsetTop => {
     const sectionBiruta = document.getElementsByClassName("section--biruta")[0];
@@ -53,21 +54,23 @@
   };
 
   const moveParallaxToTop = () => {
+    let lastKnownScrollPosition = 0;
+    let ticking = false;
+
     document.onreadystatechange = () => {
       if (document.readyState === "complete") {
-        addTopClassToParallax();
+        lastKnownScrollPosition = parallaxWrapper.scrollTop;
+
+        addTopClassToParallax(lastKnownScrollPosition);
       }
     };
 
-    let last_known_scroll_position = 0;
-    let ticking = false;
-
     parallaxWrapper.addEventListener("scroll", function(e) {
-      last_known_scroll_position = parallaxWrapper.scrollTop;
+      lastKnownScrollPosition = parallaxWrapper.scrollTop;
 
       if (!ticking) {
         window.requestAnimationFrame(function() {
-          addTopClassToParallax(last_known_scroll_position);
+          addTopClassToParallax(lastKnownScrollPosition);
           ticking = false;
         });
 

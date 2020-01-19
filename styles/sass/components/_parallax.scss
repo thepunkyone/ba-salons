@@ -19,11 +19,9 @@
 .parallax__image {
   height: 80vh;
   width: 100%;
-  background-blend-mode: hard-light;
   background-size: cover;
   background-position: 50% 50%;
   transform-origin: 0 0;
-  transform: translateZ(-3px) translateX(-60%) scale(5.2);
   position: fixed;
   margin-top: -70vh;
 
@@ -34,16 +32,20 @@
         rgba($colour-secondary, 0.6)
       ),
       url("../images/par-mums.jpg");
+    background-blend-mode: hard-light;
+    transform: translateZ(-3px) translateX(-60%) scale(5.2);
     z-index: -10;
   }
 
   &--biruta {
     background-image: linear-gradient(
         180deg,
-        rgba($colour-primary, 0.6),
-        rgba($colour-secondary, 0.6)
+        rgba($colour-primary, 0.7),
+        rgba($colour-secondary, 0.7)
       ),
-      url("../images/par-mums.jpg");
+      url("../images/masazas-galds.jpg");
+    background-blend-mode: hard-light;
+    transform: translateZ(-2px) translateX(-20%) scale(3.6);
     z-index: -20;
   }
 
