@@ -277,9 +277,7 @@ p {
 ========================================================================== */
 .massage-links {
   display: flex;
-  margin-bottom: 4.8rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
+  margin-bottom: 4.8rem; }
 
 .massage-links__card {
   width: 25%;
