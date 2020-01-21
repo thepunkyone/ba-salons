@@ -307,6 +307,7 @@ p {
 .contact-strip {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
   background-color: #302224; }
@@ -325,6 +326,7 @@ p {
 
 .contact-strip__button {
   margin-left: 3.2rem;
+  margin-right: 0;
   flex-grow: 0;
   flex-shrink: 0;
   background-color: #302224;

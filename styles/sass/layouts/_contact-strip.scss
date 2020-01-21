@@ -5,6 +5,7 @@
 .contact-strip {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-top: gutter(2);
   padding-bottom: gutter(2);
   background-color: $colour-secondary-grey;
@@ -16,6 +17,7 @@
 
 .contact-strip__button {
   margin-left: gutter(4);
+  margin-right: 0;
   flex-grow: 0;
   flex-shrink: 0;
   background-color: $colour-secondary-grey;
