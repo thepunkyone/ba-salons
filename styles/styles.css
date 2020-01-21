@@ -205,7 +205,7 @@ p {
     transform: translateZ(-3px) translateX(-60%) scale(5.2);
     z-index: -10; }
   .parallax__image--biruta {
-    background-image: linear-gradient(180deg, rgba(255, 227, 109, 0.7), rgba(140, 53, 69, 0.7)), url("../images/masazas-galds.jpg");
+    background-image: linear-gradient(180deg, rgba(255, 227, 109, 0.5), rgba(140, 53, 69, 0.5)), url("../images/masazas-galds.jpg");
     background-blend-mode: hard-light;
     transform: translateZ(-2px) translateX(-20%) scale(3.6);
     z-index: -10; }
@@ -223,6 +223,34 @@ p {
   font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: calc( 17px + (27 - 17) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 600; }
+
+.quote__image-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 15%;
+  padding-top: 15%;
+  margin-right: 3.2rem;
+  flex-shrink: 0;
+  border-radius: 100%;
+  overflow: hidden; }
+
+.quote__image {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  filter: sepia(0.5); }
+
+.quote__image-overlay {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #ffe36d, #8c3545);
+  mix-blend-mode: soft-light; }
 
 /* ==========================================================================
     Columns
@@ -277,23 +305,25 @@ p {
 ========================================================================== */
 .massage-links {
   display: flex;
-  margin-bottom: 4.8rem; }
+  margin-top: 4.8rem;
+  margin-bottom: 6.4rem; }
 
 .massage-links__card {
   width: 25%;
   margin: 0 1.6rem;
-  padding: 3.2rem 2.4rem 3.2rem;
+  padding: 0 0 3.2rem;
   border-radius: 3px;
-  background-color: #57202a;
-  color: #c7a000;
+  background-image: linear-gradient(90deg, rgba(199, 160, 0, 0.4), rgba(140, 53, 69, 0.4));
+  color: #fffffd;
   font-family: "Courier New", Courier, "Roboto Slab", serif;
-  font-size: 2rem;
+  font-size: 2.1rem;
   line-height: 1.5;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 253, 0.9); }
   .massage-links__card:first-child {
     margin-left: 0; }
   .massage-links__card:last-child {
@@ -303,9 +333,11 @@ p {
   position: relative;
   display: block;
   width: 100%;
-  padding-top: 100%;
+  padding-top: 90%;
   margin-bottom: 2.4rem;
-  border-radius: 100%;
+  border: 4px solid rgba(255, 255, 253, 0.9);
+  border-bottom: 2px solid rgba(255, 255, 253, 0.9);
+  border-radius: 3px 3px 70% 3px;
   overflow: hidden; }
 
 .massage-links__image {
@@ -313,7 +345,8 @@ p {
   top: 50%;
   left: 50%;
   height: 100%;
-  transform: translateX(-50%) translateY(-50%); }
+  transform: translateX(-50%) translateY(-50%);
+  filter: sepia(0.3); }
 
 .massage-links__image-overlay {
   width: 100%;
@@ -542,7 +575,7 @@ p {
 ========================================================================== */
 .section {
   background-color: #fffffd;
-  padding-top: 4.8rem;
+  padding-top: 6.4rem;
   padding-bottom: 8rem; }
   @media screen and (max-width: 600px) {
     .section {
@@ -561,13 +594,15 @@ p {
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto; } }
+  .section--about {
+    padding-top: 4.8rem; }
   .section--biruta {
-    padding-top: 6.4rem;
     background-color: #ffe36d;
     color: #231f25;
     margin-bottom: 80vh; }
   .section--masazas {
-    background-color: #c7a000; }
+    padding-bottom: 4.8rem;
+    background-color: #e6a570; }
 
 .section__heading {
   margin-bottom: 4rem;
@@ -576,6 +611,9 @@ p {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1rem; }
+  .section__heading--bright {
+    color: #57202a;
+    border-color: #57202a; }
 
 .section__image {
   width: 100%;
@@ -587,8 +625,17 @@ p {
   margin-bottom: 2.4rem; }
 
 .biruta__quote {
-  background-color: #e68e9e;
+  background-color: #e6a570;
   color: #39373a; }
+
+.massages__quote {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #e6a570;
+  color: #8c3545; }
 
 /*  Quick Actions
 ========================================================================== */

@@ -7,7 +7,7 @@
 
 .section {
   background-color: $colour-white;
-  padding-top: gutter(6);
+  padding-top: gutter(8);
   padding-bottom: gutter(10);
 
   @include responsive-gutters;
@@ -17,10 +17,10 @@
   }
 
   &--about {
+    padding-top: gutter(6);
   }
 
   &--biruta {
-    padding-top: gutter(8);
     background-color: $colour-primary;
     color: $colour-black;
 
@@ -28,7 +28,8 @@
   }
 
   &--masazas {
-    background-color: $colour-primary-dark;
+    padding-bottom: gutter(6);
+    background-color: $colour-secondary-light;
   }
 }
 
@@ -41,6 +42,11 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.1rem;
+
+  &--bright {
+    color: $colour-secondary-dark;
+    border-color: $colour-secondary-dark;
+  }
 }
 
 // Section image
@@ -60,6 +66,16 @@
 .biruta__quote {
   background-color: $colour-secondary-light;
   color: $colour-grey-dark;
+}
+
+.massages__quote {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: $colour-secondary-light;
+  color: $colour-secondary;
 }
 
 /*  Quick Actions
