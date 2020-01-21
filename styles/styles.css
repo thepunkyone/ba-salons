@@ -114,11 +114,12 @@ p {
 /*  Button
 ========================================================================== */
 .button, .link-button {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1.6rem 2rem;
   background-color: #8c3545;
   color: #fffffd;
-  padding: 1.6rem 2rem;
-  display: block;
-  margin: 0 auto;
   border-radius: 3px;
   font-family: "Courier New", Courier, "Roboto Slab", serif;
   font-size: 1.8rem;
@@ -301,6 +302,43 @@ p {
     width: 50%; } }
 
 /* ==========================================================================
+    Contact Strip
+========================================================================== */
+.contact-strip {
+  display: flex;
+  align-items: center;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  background-color: #302224; }
+  @media screen and (max-width: 600px) {
+    .contact-strip {
+      padding-left: 1.6rem;
+      padding-right: 1.6rem; } }
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    .contact-strip {
+      padding-left: 3.2rem;
+      padding-right: 3.2rem; } }
+  @media screen and (min-width: 960px) {
+    .contact-strip {
+      padding-left: 8rem;
+      padding-right: 8rem; } }
+
+.contact-strip__button {
+  margin-left: 3.2rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #302224;
+  color: #c7a000;
+  border: 2px solid #c7a000; }
+
+.contact-strip__icon {
+  margin-right: 1.6rem; }
+
+.contact-strip__text {
+  color: #c7a000;
+  text-align: left; }
+
+/* ==========================================================================
     Massage Links
 ========================================================================== */
 .massage-links {
@@ -356,6 +394,9 @@ p {
   left: 0;
   background: linear-gradient(135deg, #ffe36d, #8c3545);
   mix-blend-mode: soft-light; }
+
+.massage-links__text {
+  padding: 0 0.8rem; }
 
 .chevron-down {
   display: block;
@@ -449,8 +490,6 @@ p {
   display: flex; }
 
 .hero__button {
-  display: flex;
-  align-items: center;
   box-shadow: 0px 0px 15px 0px rgba(57, 55, 58, 0.5); }
   .hero__button:first-child {
     margin-right: 1.6rem; }
@@ -635,7 +674,9 @@ p {
   padding-left: 0;
   padding-right: 0;
   background-color: #e6a570;
-  color: #8c3545; }
+  color: #8c3545;
+  font-size: 2.1rem;
+  text-align: left; }
 
 /*  Quick Actions
 ========================================================================== */

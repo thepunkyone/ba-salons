@@ -1,0 +1,35 @@
+/* ==========================================================================
+    Contact Strip
+========================================================================== */
+
+.contact-strip {
+  display: flex;
+  align-items: center;
+  padding-top: gutter(2);
+  padding-bottom: gutter(2);
+  background-color: $colour-secondary-grey;
+
+  @include responsive-gutters;
+}
+
+// Button
+
+.contact-strip__button {
+  margin-left: gutter(4);
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: $colour-secondary-grey;
+  color: $colour-primary-dark;
+  border: 2px solid $colour-primary-dark;
+}
+
+.contact-strip__icon {
+  margin-right: gutter(2);
+}
+
+// Text
+
+.contact-strip__text {
+  color: $colour-primary-dark;
+  text-align: left;
+}
