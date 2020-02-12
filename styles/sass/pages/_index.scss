@@ -10,6 +10,10 @@
   padding-top: gutter(8);
   padding-bottom: gutter(10);
 
+  @include above($small) {
+    text-align: justify;
+  }
+
   @include responsive-gutters;
 
   & > * {
@@ -27,9 +31,9 @@
     @include parallax-gap;
   }
 
-  &--masazas {
-    padding-bottom: gutter(6);
-    background-color: $colour-secondary-light;
+  &--masazas-navigation {
+    padding-bottom: gutter(10);
+    background-color: $colour-secondary-grey;
   }
 }
 
@@ -43,9 +47,9 @@
   text-align: center;
   letter-spacing: 0.1rem;
 
-  &--bright {
-    color: $colour-secondary-dark;
-    border-color: $colour-secondary-dark;
+  &--light {
+    color: $colour-primary-dark;
+    border-color: $colour-primary-dark;
   }
 }
 
@@ -69,14 +73,19 @@
 }
 
 .massages__quote {
+  @include above($small) {
+    max-width: 800px;
+  }
+
   display: flex;
   align-items: center;
-  max-width: 800px;
-  padding-left: 0;
-  padding-right: 0;
-  background-color: $colour-secondary-light;
-  color: $colour-secondary;
-  font-size: 2.1rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: gutter(2) gutter(3);
+  background-color: $colour-grey-dark;
+  color: $colour-grey-light;
+  font-size: responsive(14, 18);
+  font-weight: 400;
   text-align: left;
 }
 

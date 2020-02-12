@@ -65,8 +65,4 @@ h2 {
 
 p {
   margin: 1rem 0;
-
-  @include above($small) {
-    text-align: justify;
-  }
 }

@@ -4,8 +4,8 @@
 
 .massage-links {
   display: flex;
-  margin-top: gutter(6);
-  margin-bottom: gutter(8);
+  margin-top: gutter(8);
+  margin-bottom: gutter(10);
 }
 
 // Card
@@ -17,10 +17,10 @@
   border-radius: $border-radius;
   background-image: linear-gradient(
     90deg,
-    rgba($colour-primary-dark, 0.4),
-    rgba($colour-secondary, 0.4)
+    rgba($colour-secondary, 0.4),
+    rgba($colour-secondary-grey, 0.4)
   );
-  color: $colour-white;
+  color: $colour-primary-dark;
   font-family: "Courier New", Courier, "Roboto Slab", serif;
   font-size: 2.1rem;
   line-height: 1.5;
@@ -29,7 +29,7 @@
   letter-spacing: 0.15em;
   text-align: center;
   text-decoration: none;
-  box-shadow: inset 0px 0px 0px 4px rgba($colour-white, 0.9);
+  box-shadow: inset 0px 0px 0px 4px rgba($colour-primary-dark, 0.9);
 
   &:first-child {
     margin-left: 0;
@@ -48,8 +48,8 @@
   width: 100%;
   padding-top: 90%;
   margin-bottom: gutter(3);
-  border: 4px solid rgba($colour-white, 0.9);
-  border-bottom: 2px solid rgba($colour-white, 0.9);
+  border: 4px solid rgba($colour-primary-dark, 0.9);
+  border-bottom: 2px solid rgba($colour-primary-dark, 0.9);
   border-radius: $border-radius $border-radius 70% $border-radius;
   overflow: hidden;
 }
