@@ -82,21 +82,39 @@ body {
 body {
   font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 1.7;
+  line-height: 1.6;
   color: #39373a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Courier New", Courier, "Roboto Slab", serif; }
 
 h1,
 h2 {
   font-size: 3.6rem; }
 
+h3 {
+  font-size: 2.7rem; }
+
 p {
-  margin: 1rem 0; }
+  margin: 1em 0; }
+
+.list__heading {
+  margin-bottom: 0; }
+
+.list__content {
+  margin-top: 0.8rem;
+  padding-left: 1.8rem;
+  list-style-type: circle; }
+
+.list__item {
+  text-align: left;
+  margin-bottom: 0.8rem; }
+  .list-content .list__item:last-child {
+    margin-bottom: 0; }
 
 /* ==========================================================================
     Utilities
@@ -298,6 +316,18 @@ p {
 @media screen and (min-width: 768px) {
   .columns--two .columns__column {
     width: 50%; } }
+
+@media screen and (min-width: 768px) {
+  .columns--three-two .columns__column:first-child {
+    width: 60%; }
+  .columns--three-two .columns__column:last-child {
+    width: 40%; } }
+
+@media screen and (min-width: 768px) {
+  .columns--two-three .columns__column:first-child {
+    width: 40%; }
+  .columns--two-three .columns__column:last-child {
+    width: 60%; } }
 
 /* ==========================================================================
     Contact Strip
@@ -659,6 +689,16 @@ p {
   .section__heading--light {
     color: #c7a000;
     border-color: #c7a000; }
+
+.section__subheading {
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #57202a;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem; }
+
+.section__massage-description {
+  margin-bottom: 6.4rem; }
 
 .section__image {
   width: 100%;

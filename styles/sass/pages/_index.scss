@@ -53,6 +53,22 @@
   }
 }
 
+// Section subheading
+
+.section__subheading {
+  text-align: center;
+  margin-bottom: gutter(3);
+  color: $colour-secondary-dark;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+// Section massage description
+
+.section__massage-description {
+  margin-bottom: gutter(8);
+}
+
 // Section image
 
 .section__image {

@@ -47,14 +47,15 @@
 body {
   font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: responsive(16, 20);
-  line-height: 1.7;
+  line-height: 1.6;
   color: $colour-grey-dark;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Courier New", Courier, "Roboto Slab", serif;
 }
 
@@ -63,6 +64,31 @@ h2 {
   font-size: 3.6rem;
 }
 
+h3 {
+  font-size: 2.7rem;
+}
+
 p {
-  margin: 1rem 0;
+  margin: 1em 0;
+}
+
+// List
+
+.list__heading {
+  margin-bottom: 0;
+}
+
+.list__content {
+  margin-top: gutter(1);
+  padding-left: gutter(2.25);
+  list-style-type: circle;
+}
+
+.list__item {
+  text-align: left;
+  margin-bottom: gutter(1);
+
+  .list-content &:last-child {
+    margin-bottom: 0;
+  }
 }

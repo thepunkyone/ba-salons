@@ -81,3 +81,30 @@
     }
   }
 }
+
+// Three fifths - two fifths column layout
+
+.columns--three-two {
+  @include above($medium) {
+    & .columns__column:first-child {
+      width: 60%;
+    }
+
+    & .columns__column:last-child {
+      width: 40%;
+    }
+  }
+}
+
+// Two fifths - three fifths column layout
+.columns--two-three {
+  @include above($medium) {
+    & .columns__column:first-child {
+      width: 40%;
+    }
+
+    & .columns__column:last-child {
+      width: 60%;
+    }
+  }
+}
