@@ -2,6 +2,9 @@ import telefons from "../svgs/icons/telefons.svg";
 import epasts from "../svgs/icons/epasts.svg";
 import chevronDown from "../svgs/icons/chevron-down.svg";
 
+import time from "../svgs/icons/time.svg";
+import money from "../svgs/icons/money.svg";
+
 import masazas from "../svgs/icons/masazas.svg";
 import kalendars from "../svgs/icons/kalendars.svg";
 import terapeite from "../svgs/icons/terapeite.svg";
@@ -24,6 +27,18 @@ const appendSvg = () => {
 
   for (let i = 0; i < chevronDownIcons.length; i++) {
     chevronDownIcons[i].innerHTML = chevronDown;
+  }
+
+  const timeIcons = document.getElementsByClassName("time");
+
+  for (let i = 0; i < timeIcons.length; i++) {
+    timeIcons[i].innerHTML = time;
+  }
+
+  const moneyIcons = document.getElementsByClassName("money");
+
+  for (let i = 0; i < moneyIcons.length; i++) {
+    moneyIcons[i].innerHTML = money;
   }
 
   document.getElementById("masazas").innerHTML = masazas;

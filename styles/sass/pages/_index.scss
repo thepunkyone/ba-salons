@@ -35,6 +35,10 @@
     padding-bottom: gutter(10);
     background-color: $colour-secondary-grey;
   }
+
+  &--ajurvediskas-masazas {
+    background-color: $colour-grey-superlight;
+  }
 }
 
 // Section heading
@@ -50,6 +54,10 @@
   &--light {
     color: $colour-primary-dark;
     border-color: $colour-primary-dark;
+  }
+
+  &--large-margin {
+    margin-bottom: gutter(8);
   }
 }
 

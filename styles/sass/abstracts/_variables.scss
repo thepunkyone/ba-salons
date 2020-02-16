@@ -12,6 +12,7 @@ $gutter: 0.8rem;
 
 $colour-primary: #ffe36d;
 $colour-primary-dark: #c7a000;
+$colour-primary-darker: #9b7c00;
 $colour-primary-bright: #ffce00;
 
 $colour-secondary: #8c3545;
@@ -20,7 +21,9 @@ $colour-secondary-light: #e6a570;
 $colour-secondary-grey: #302224;
 
 $colour-white: #fffffd;
+$colour-grey-superlight: #eee6df;
 $colour-grey-light: #b1ad9f;
+$colour-grey-medium: #6c686d;
 $colour-grey-dark: #39373a;
 $colour-black: #231f25;
 
@@ -37,6 +40,8 @@ $default-font-size: 1.6rem;
 /*  Responsive Breakpoints
 ========================================================================== */
 
+$xxsmall: 300px;
+$xsmall: 480px;
 $small: 600px;
 $medium: 768px;
 $large: 960px;
