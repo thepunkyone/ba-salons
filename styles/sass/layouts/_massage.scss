@@ -109,11 +109,11 @@
   margin-top: 1em;
 
   @include below($xsmall) {
-    padding: 0 gutter(3) gutter(2);
+    padding: 0 gutter(3) 0;
   }
 
   @include between($xsmall, $medium) {
-    padding: 0 gutter(5) gutter(5);
+    padding: 0 gutter(5) 0;
   }
 
   @include above($medium) {
@@ -122,8 +122,12 @@
 }
 
 .massage__content {
+  @include below($xsmall) {
+    padding-bottom: gutter(2.5);
+  }
+
   @include between($xsmall, $medium) {
-    padding-top: gutter(3);
+    padding: gutter(3) 0 gutter(5);
   }
 
   @include above($medium) {
@@ -141,7 +145,7 @@
 
 .massage-content__description {
   @include below($xsmall) {
-    padding: gutter(3) gutter(2);
+    padding: gutter(3) gutter(2) 0;
   }
 
   @include between($xsmall, $medium) {

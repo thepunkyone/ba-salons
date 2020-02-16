@@ -453,17 +453,21 @@ p {
   margin-top: 1em; }
   @media screen and (max-width: 480px) {
     .massage-content__single-column {
-      padding: 0 2.4rem 1.6rem; } }
+      padding: 0 2.4rem 0; } }
   @media screen and (min-width: 480px) and (max-width: 768px) {
     .massage-content__single-column {
-      padding: 0 4rem 4rem; } }
+      padding: 0 4rem 0; } }
   @media screen and (min-width: 768px) {
     .massage-content__single-column {
       padding-right: 4rem; } }
 
+@media screen and (max-width: 480px) {
+  .massage__content {
+    padding-bottom: 2rem; } }
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .massage__content {
-    padding-top: 2.4rem; } }
+    padding: 2.4rem 0 4rem; } }
 
 @media screen and (min-width: 768px) {
   .massage__content {
@@ -477,7 +481,7 @@ p {
 
 @media screen and (max-width: 480px) {
   .massage-content__description {
-    padding: 2.4rem 1.6rem; } }
+    padding: 2.4rem 1.6rem 0; } }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .massage-content__description {
