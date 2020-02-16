@@ -23,16 +23,15 @@
   overflow: hidden;
 
   @include below($xsmall) {
-    padding-top: 27vh;
     border-radius: 0;
   }
 
-  @include between($xsmall, $medium) {
+  @include below($medium) {
     padding-top: 27vh;
   }
 
   @include above($medium) {
-    padding-top: 25vw;
+    padding-top: 23vw;
   }
 }
 
@@ -106,6 +105,22 @@
   }
 }
 
+.massage-content__single-column {
+  margin-top: 1em;
+
+  @include below($xsmall) {
+    padding: 0 gutter(3) gutter(2);
+  }
+
+  @include between($xsmall, $medium) {
+    padding: 0 gutter(5) gutter(5);
+  }
+
+  @include above($medium) {
+    padding-right: gutter(5);
+  }
+}
+
 .massage__content {
   @include between($xsmall, $medium) {
     padding-top: gutter(3);
@@ -130,7 +145,7 @@
   }
 
   @include between($xsmall, $medium) {
-    padding: gutter(4) gutter(5);
+    padding: gutter(4) gutter(5) 0;
   }
 }
 
@@ -177,6 +192,7 @@
 .massage-content__rate {
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
   background-color: $colour-secondary-light;
 
   @include below($xsmall) {
@@ -207,7 +223,7 @@
 .massage-rate {
   display: flex;
   align-items: center;
-  color: $colour-grey-dark;
+  color: $colour-grey-medium;
   font-size: responsive(13, 18);
   text-align: left;
 

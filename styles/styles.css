@@ -83,7 +83,7 @@ body {
   font-family: "Roboto Slab", "Palatino", "Georgia", serif;
   font-size: calc( 15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.6;
-  color: #39373a;
+  color: #434044;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -107,8 +107,9 @@ p {
 
 .list__content {
   margin-top: 0.8rem;
-  padding-left: 1.8rem;
-  list-style-type: circle; }
+  padding-left: 1.8rem; }
+  .list__content--circle {
+    list-style-type: circle; }
 
 .list__item {
   text-align: left;
@@ -390,14 +391,13 @@ p {
   overflow: hidden; }
   @media screen and (max-width: 480px) {
     .massage__hero {
-      padding-top: 27vh;
       border-radius: 0; } }
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .massage__hero {
       padding-top: 27vh; } }
   @media screen and (min-width: 768px) {
     .massage__hero {
-      padding-top: 25vw; } }
+      padding-top: 23vw; } }
 
 .massage-hero__image {
   width: 100%;
@@ -449,6 +449,18 @@ p {
     .massage-content__columns .columns__column {
       width: 50%; } }
 
+.massage-content__single-column {
+  margin-top: 1em; }
+  @media screen and (max-width: 480px) {
+    .massage-content__single-column {
+      padding: 0 2.4rem 1.6rem; } }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    .massage-content__single-column {
+      padding: 0 4rem 4rem; } }
+  @media screen and (min-width: 768px) {
+    .massage-content__single-column {
+      padding-right: 4rem; } }
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .massage__content {
     padding-top: 2.4rem; } }
@@ -469,7 +481,7 @@ p {
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .massage-content__description {
-    padding: 3.2rem 4rem; } }
+    padding: 3.2rem 4rem 0; } }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .massage-content__info-boxes {
@@ -505,6 +517,7 @@ p {
 .massage-content__rate {
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
   background-color: #e6a570; }
   @media screen and (max-width: 480px) {
     .massage-content__rate {
@@ -529,7 +542,7 @@ p {
 .massage-rate {
   display: flex;
   align-items: center;
-  color: #39373a;
+  color: #5a555c;
   font-size: calc( 13px + (18 - 13) * ((100vw - 300px) / (1600 - 300)));
   text-align: left; }
   @media screen and (min-width: 480px) {
@@ -698,7 +711,7 @@ p {
   width: 50%;
   color: white;
   text-align: center;
-  text-shadow: 0px 0px 10px #39373a;
+  text-shadow: 0px 0px 10px #434044;
   transform: translateX(-50%); }
 
 .hero__heading {
@@ -723,7 +736,7 @@ p {
   display: flex; }
 
 .hero__button {
-  box-shadow: 0px 0px 15px 0px rgba(57, 55, 58, 0.5); }
+  box-shadow: 0px 0px 15px 0px rgba(67, 64, 68, 0.5); }
   .hero__button:first-child {
     margin-right: 1.6rem; }
 
@@ -735,7 +748,7 @@ p {
   top: 0;
   color: #c7a000;
   background-color: #57202a;
-  box-shadow: 0px 0px 15px 0px rgba(57, 55, 58, 0.5);
+  box-shadow: 0px 0px 15px 0px rgba(67, 64, 68, 0.5);
   font-family: "Courier New", Courier, "Roboto Slab", serif;
   font-size: calc( 16px + (22 - 16) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 600;
@@ -915,7 +928,7 @@ p {
 
 .biruta__quote {
   background-color: #e6a570;
-  color: #39373a; }
+  color: #434044; }
 
 .massages__quote {
   display: flex;
@@ -923,7 +936,7 @@ p {
   justify-content: space-between;
   margin: 0 auto;
   padding: 1.6rem 2.4rem;
-  background-color: #39373a;
+  background-color: #434044;
   color: #b1ad9f;
   font-size: calc( 14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 400;

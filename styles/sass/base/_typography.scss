@@ -81,7 +81,10 @@ p {
 .list__content {
   margin-top: gutter(1);
   padding-left: gutter(2.25);
-  list-style-type: circle;
+
+  &--circle {
+    list-style-type: circle;
+  }
 }
 
 .list__item {
