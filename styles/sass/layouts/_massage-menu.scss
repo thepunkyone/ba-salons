@@ -1,0 +1,86 @@
+/* ==========================================================================
+    Massage Menu
+========================================================================== */
+
+.massage-menu {
+  margin-bottom: gutter(8);
+  background-color: $colour-white;
+  border-radius: $border-radius;
+}
+
+// Hero
+
+.massage-menu__hero {
+  margin-bottom: gutter(4);
+}
+
+.massage-menu-hero__heading {
+  font-size: 3.6rem;
+  justify-content: center;
+}
+
+//Columns
+
+.massage-menu__column {
+  text-align: left;
+
+  @include below($xsmall) {
+    padding: 0 gutter(2);
+  }
+
+  @include between($xsmall, $medium) {
+    padding: 0 gutter(5);
+  }
+
+  @include above($medium) {
+    .massage-menu &:first-child {
+      padding-left: gutter(5);
+    }
+
+    .massage-menu &:last-child {
+      padding-right: gutter(5);
+    }
+  }
+}
+
+// Section
+
+.massage-menu__section {
+  margin-bottom: gutter(4);
+}
+
+// Section heading
+
+.massage-menu__section-heading {
+  color: $colour-grey-dark;
+  border-bottom: 2px solid $colour-grey-dark;
+  line-height: 1.2;
+  margin-bottom: gutter(2);
+}
+
+// Links
+
+.massage-menu__links {
+  list-style-type: none;
+}
+
+// Link
+
+.massage-menu__link {
+  display: block;
+  margin: gutter(1) 0;
+  padding: gutter(3);
+  color: $colour-primary-dark;
+  border-radius: $border-radius;
+  border: 2px solid $colour-primary-dark;
+  font-size: responsive(14, 17);
+  text-decoration: none;
+}
+
+// Ayurvedic description
+
+.massage-menu__ayurvedic-description {
+  margin: gutter(3) gutter(5) 0;
+  padding-bottom: gutter(5);
+  border-top: 2px solid $colour-grey-superlight;
+}
