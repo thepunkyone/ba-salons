@@ -11,6 +11,10 @@
   background-color: $colour-primary-dark;
 
   @include responsive-gutters;
+
+  &--make-appointment {
+    background-color: $colour-secondary-dark;
+  }
 }
 
 // Button
@@ -24,6 +28,16 @@
   color: $colour-secondary-dark;
   border: 2px solid $colour-secondary-dark;
   font-size: responsive(16, 20);
+
+  .contact-strip--make-appointment & {
+    background-color: $colour-secondary-dark;
+    color: $colour-primary-dark;
+    border: 2px solid $colour-primary-dark;
+  }
+
+  .contact-strip--make-appointment &:first-of-type {
+    margin-left: auto;
+  }
 }
 
 .contact-strip__icon {
@@ -37,4 +51,9 @@
   font-size: responsive(14, 18);
   line-height: 1.5;
   text-align: left;
+
+  .contact-strip--make-appointment & {
+    color: $colour-primary-dark;
+    font-size: responsive(16, 20);
+  }
 }

@@ -352,6 +352,8 @@ p {
     .contact-strip {
       padding-left: 8rem;
       padding-right: 8rem; } }
+  .contact-strip--make-appointment {
+    background-color: #57202a; }
 
 .contact-strip__button {
   margin-left: 3.2rem;
@@ -362,6 +364,12 @@ p {
   color: #57202a;
   border: 2px solid #57202a;
   font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))); }
+  .contact-strip--make-appointment .contact-strip__button {
+    background-color: #57202a;
+    color: #c7a000;
+    border: 2px solid #c7a000; }
+  .contact-strip--make-appointment .contact-strip__button:first-of-type {
+    margin-left: auto; }
 
 .contact-strip__icon {
   margin-right: 1.6rem; }
@@ -371,6 +379,9 @@ p {
   font-size: calc( 14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.5;
   text-align: left; }
+  .contact-strip--make-appointment .contact-strip__text {
+    color: #c7a000;
+    font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))); }
 
 /* ==========================================================================
     Massage
@@ -689,8 +700,8 @@ p {
   margin-bottom: 3.2rem; }
 
 .massage-menu__section-heading {
-  color: #434044;
-  border-bottom: 2px solid #434044;
+  color: #5a555c;
+  border-bottom: 2px solid #5a555c;
   line-height: 1.2;
   margin-bottom: 1.6rem; }
 
@@ -710,6 +721,7 @@ p {
 .massage-menu__ayurvedic-description {
   margin: 2.4rem 4rem 0;
   padding-bottom: 4rem;
+  color: #5a555c;
   border-top: 2px solid #eee6df; }
 
 /* ==========================================================================

@@ -52,8 +52,8 @@
 // Section heading
 
 .massage-menu__section-heading {
-  color: $colour-grey-dark;
-  border-bottom: 2px solid $colour-grey-dark;
+  color: $colour-grey-medium;
+  border-bottom: 2px solid $colour-grey-medium;
   line-height: 1.2;
   margin-bottom: gutter(2);
 }
@@ -82,5 +82,6 @@
 .massage-menu__ayurvedic-description {
   margin: gutter(3) gutter(5) 0;
   padding-bottom: gutter(5);
+  color: $colour-grey-medium;
   border-top: 2px solid $colour-grey-superlight;
 }
