@@ -384,6 +384,94 @@ p {
     font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))); }
 
 /* ==========================================================================
+    Hero
+========================================================================== */
+.hero__container {
+  overflow: hidden;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .hero__container {
+      height: 60vh; } }
+  @media screen and (min-width: 768px) {
+    .hero__container {
+      height: 80vh; } }
+
+.hero__image {
+  display: block;
+  width: 100%;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%; }
+
+.hero__image-overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255, 227, 109, 0.4), rgba(140, 53, 69, 0.4));
+  mix-blend-mode: multiply; }
+  @media screen and (max-width: 768px) {
+    .hero__image-overlay {
+      height: 60vh; } }
+  @media screen and (min-width: 768px) {
+    .hero__image-overlay {
+      height: 80vh; } }
+
+.hero__logo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 1.6rem;
+  left: 1.6rem;
+  background: rgba(87, 32, 42, 0.6);
+  border-radius: 300px; }
+
+.hero__languages {
+  display: flex;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem; }
+  .hero__languages .link-button:first-child {
+    margin-right: 0.8rem; }
+
+.hero__title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 50%;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 10px #434044;
+  transform: translateX(-50%); }
+
+.hero__heading {
+  font-family: "American Typewriter", "Roboto Slab", serif;
+  font-weight: normal;
+  font-size: 7rem;
+  letter-spacing: 0.2rem;
+  line-height: 1; }
+
+.hero__subheading {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  line-height: 1.5;
+  text-align: center; }
+
+.hero__buttons {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex; }
+
+.hero__button {
+  box-shadow: 0px 0px 15px 0px rgba(67, 64, 68, 0.5); }
+  .hero__button:first-child {
+    margin-right: 1.6rem; }
+
+/* ==========================================================================
     Massage
 ========================================================================== */
 .massage {
@@ -725,94 +813,6 @@ p {
   border-top: 2px solid #eee6df; }
 
 /* ==========================================================================
-    Hero
-========================================================================== */
-.hero__container {
-  overflow: hidden;
-  position: relative; }
-  @media screen and (max-width: 768px) {
-    .hero__container {
-      height: 60vh; } }
-  @media screen and (min-width: 768px) {
-    .hero__container {
-      height: 80vh; } }
-
-.hero__image {
-  display: block;
-  width: 100%;
-  transform: translateY(-50%);
-  position: absolute;
-  top: 50%; }
-
-.hero__image-overlay {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(180deg, rgba(255, 227, 109, 0.4), rgba(140, 53, 69, 0.4));
-  mix-blend-mode: multiply; }
-  @media screen and (max-width: 768px) {
-    .hero__image-overlay {
-      height: 60vh; } }
-  @media screen and (min-width: 768px) {
-    .hero__image-overlay {
-      height: 80vh; } }
-
-.hero__logo {
-  display: block;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 1.6rem;
-  left: 1.6rem;
-  background: rgba(87, 32, 42, 0.6);
-  border-radius: 300px; }
-
-.hero__languages {
-  display: flex;
-  position: absolute;
-  top: 1.6rem;
-  right: 1.6rem; }
-  .hero__languages .link-button:first-child {
-    margin-right: 0.8rem; }
-
-.hero__title {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  width: 50%;
-  color: white;
-  text-align: center;
-  text-shadow: 0px 0px 10px #434044;
-  transform: translateX(-50%); }
-
-.hero__heading {
-  font-family: "American Typewriter", "Roboto Slab", serif;
-  font-weight: normal;
-  font-size: 7rem;
-  letter-spacing: 0.2rem;
-  line-height: 1; }
-
-.hero__subheading {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 0.15rem;
-  line-height: 1.5;
-  text-align: center; }
-
-.hero__buttons {
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex; }
-
-.hero__button {
-  box-shadow: 0px 0px 15px 0px rgba(67, 64, 68, 0.5); }
-  .hero__button:first-child {
-    margin-right: 1.6rem; }
-
-/* ==========================================================================
     Navigation
 ========================================================================== */
 .navigation {
@@ -924,6 +924,67 @@ p {
   margin-bottom: 2.4rem; }
   .quick-actions__icon svg path {
     fill: rgba(199, 160, 0, 0.9); }
+
+/* ==========================================================================
+    Reviews
+========================================================================== */
+.reviews {
+  display: flex;
+  justify-content: center;
+  background-color: #e6a570; }
+  @media screen and (max-width: 600px) {
+    .reviews {
+      padding-left: 1.6rem;
+      padding-right: 1.6rem; } }
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    .reviews {
+      padding-left: 3.2rem;
+      padding-right: 3.2rem; } }
+  @media screen and (min-width: 960px) {
+    .reviews {
+      padding-left: 8rem;
+      padding-right: 8rem; } }
+
+.review-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 3.2rem 1.6rem;
+  padding: 3.2rem 4rem;
+  background-color: #ebb88e;
+  border-radius: 3px;
+  overflow: hidden; }
+  .reviews .review-card:first-child {
+    margin-left: 0; }
+  .reviews .review-card:last-child {
+    margin-right: 0; }
+  .review-card::after {
+    content: ",,";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #efc6a4;
+    font-family: "American Typewriter", "Roboto Slab", serif;
+    font-size: 30rem;
+    letter-spacing: -3rem;
+    line-height: 0;
+    transform: translateX(-10px) translateY(-70px); }
+
+.review-card__review {
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))); }
+
+.review-card__name {
+  width: 80%;
+  text-align: right; }
+  .review-card__name cite {
+    color: #5a555c;
+    font-style: normal;
+    font-size: calc( 14px + (17 - 14) * ((100vw - 300px) / (1600 - 300))); }
 
 /* ==========================================================================
     Index Page

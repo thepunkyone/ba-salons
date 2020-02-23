@@ -1,0 +1,63 @@
+/* ==========================================================================
+    Reviews
+========================================================================== */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  background-color: $colour-secondary-light;
+
+  @include responsive-gutters;
+}
+
+.review-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: gutter(4) gutter(2);
+  padding: gutter(4) gutter(5);
+  background-color: lighten($colour-secondary-light, 7%);
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  .reviews &:first-child {
+    margin-left: 0;
+  }
+
+  .reviews &:last-child {
+    margin-right: 0;
+  }
+
+  &::after {
+    content: ",,";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: lighten($colour-secondary-light, 12%);
+    font-family: "American Typewriter", "Roboto Slab", serif;
+    font-size: 30rem;
+    letter-spacing: -3rem;
+    line-height: 0;
+    transform: translateX(-10px) translateY(-70px);
+  }
+}
+
+.review-card__review {
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: responsive(16, 20);
+}
+
+.review-card__name {
+  width: 80%;
+  text-align: right;
+
+  cite {
+    color: $colour-grey-medium;
+    font-style: normal;
+    font-size: responsive(14, 17);
+  }
+}
