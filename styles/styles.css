@@ -1151,7 +1151,8 @@ p {
 
 .contact-us__company-details {
   margin-top: 1.6rem;
-  color: #5a555c; }
+  color: #5a555c;
+  font-size: calc( 14px + (17 - 14) * ((100vw - 300px) / (1600 - 300))); }
   .contact-us__company-details p {
     margin: 0; }
 
@@ -1169,7 +1170,7 @@ p {
   padding: 2.4rem;
   background-color: #ebb88e;
   border-radius: 3px;
-  font-size: calc( 18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc( 17px + (21 - 17) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 1.6rem; }
   @media screen and (min-width: 480px) and (max-width: 768px) {
     .contact-us__addresses .contact-us__address:first-of-type {

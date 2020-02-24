@@ -170,6 +170,7 @@
 .contact-us__company-details {
   margin-top: gutter(2);
   color: $colour-grey-medium;
+  font-size: responsive(14, 17);
 
   p {
     margin: 0;
@@ -193,7 +194,7 @@
   padding: gutter(3);
   background-color: lighten($colour-secondary-light, 7%);
   border-radius: $border-radius;
-  font-size: responsive(18, 22);
+  font-size: responsive(17, 21);
   margin-bottom: gutter(2);
 
   @include between($xsmall, $medium) {
