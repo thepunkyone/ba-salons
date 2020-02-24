@@ -5,8 +5,15 @@
 // Layout
 
 .columns {
+  display: flex;
+
+  @include below($medium) {
+    flex-direction: column;
+  }
+
   @include above($medium) {
-    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 
@@ -36,6 +43,11 @@
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
+}
+
+.image-wrapper--vertical {
+  height: 0;
+  padding-top: 60%;
 
   @include below($medium) {
     margin-bottom: gutter(3);
@@ -43,10 +55,25 @@
   }
 }
 
+.image-wrapper--horizontal {
+  height: 0;
+  padding-top: 66.666%;
+
+  @include below($medium) {
+    margin-bottom: gutter(3);
+    padding-top: 40vw;
+  }
+}
+
 // Image
 
 .columns__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   width: 100%;
+  border-radius: $border-radius;
 
   @include below($medium) {
     position: absolute;
@@ -70,6 +97,15 @@
     rgba($colour-secondary, 0.3)
   );
   mix-blend-mode: soft-light;
+
+  &--strong-gradient {
+    background: linear-gradient(
+      180deg,
+      rgba($colour-primary, 0.7),
+      rgba($colour-secondary, 0.7)
+    );
+    mix-blend-mode: hard-light;
+  }
 }
 
 // Two column layout

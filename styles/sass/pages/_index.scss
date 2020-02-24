@@ -36,8 +36,13 @@
     background-color: $colour-secondary-grey;
   }
 
-  &--ajurvediskas-masazas {
+  &--masazas {
     background-color: $colour-grey-superlight;
+  }
+
+  &--contact-us {
+    background-color: $colour-secondary-light;
+    color: $colour-black;
   }
 }
 
@@ -118,4 +123,100 @@
 
 .quick-actions {
   @include parallax-gap;
+}
+
+/*  Reviews
+========================================================================== */
+
+.reviews {
+  @include parallax-gap;
+}
+
+/*  Contact Us
+========================================================================== */
+
+.contact-us__columns {
+  @include below($medium) {
+    flex-direction: column-reverse;
+  }
+}
+
+.contact-us__contacts {
+  padding: gutter(5) gutter(3) gutter(3);
+  background-color: lighten($colour-secondary-light, 15%);
+  border-radius: $border-radius;
+
+  .contact-us__link:first-of-type {
+    margin-bottom: gutter(1);
+  }
+}
+
+.contact-us__link {
+  display: flex;
+  align-items: center;
+  color: $colour-secondary-dark;
+  font-family: "Courier New", Courier, "Roboto Slab", serif;
+  font-size: responsive(19, 26);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.contact-us__icon {
+  width: 26px;
+  height: 26px;
+}
+
+.contact-us__company-details {
+  margin-top: gutter(2);
+  color: $colour-grey-medium;
+
+  p {
+    margin: 0;
+  }
+}
+
+.contact-us__addresses {
+  margin-top: gutter(2);
+
+  @include below($medium) {
+    margin-bottom: gutter(1);
+  }
+
+  @include between($xsmall, $medium) {
+    display: flex;
+  }
+}
+
+.contact-us__address {
+  width: 100%;
+  padding: gutter(3);
+  background-color: lighten($colour-secondary-light, 7%);
+  border-radius: $border-radius;
+  font-size: responsive(18, 22);
+  margin-bottom: gutter(2);
+
+  @include between($xsmall, $medium) {
+    .contact-us__addresses &:first-of-type {
+      margin-right: gutter(2);
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.contact-us__additional-info {
+  p:first-child {
+    font-size: responsive(16, 18);
+
+    @include below($medium) {
+      margin-top: 0;
+    }
+  }
+
+  p:last-child {
+    font-size: responsive(14, 16);
+  }
 }
