@@ -436,6 +436,4 @@
 
   window.createMap = createMap;
 
-  console.log(window);
-
 }());

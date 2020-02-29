@@ -7,5 +7,3 @@ appendSvg();
 moveParallaxToTop();
 
 window.createMap = createMap;
-
-console.log(window);

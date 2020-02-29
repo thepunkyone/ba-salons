@@ -7,7 +7,7 @@
     "watch:sass": "node-sass -w styles/sass/main.scss styles/styles.css",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
-    "build:js": "rollup -c"
+    "build": "envsub --env-file .env index.html dist/index.html && rollup -c && node-sass styles/sass/main.scss dist/styles/styles.css"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
   "keywords": [
     "html",
     "scss",
+    "js",
     "static",
     "site"
   ],
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/thepunkyone/ba-salons#readme",
   "devDependencies": {
+    "envsub": "^4.0.7",
     "node-sass": "^4.13.0",
     "npm-run-all": "^4.1.5",
     "rollup": "^1.29.0",
