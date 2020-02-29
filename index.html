@@ -375,12 +375,10 @@
               >
                 <img
                   class="columns__image"
-                  src="images/udensroze.jpg"
-                  alt="Skulptūra ar rožlapiņām"
+                  src="images/gongs.jpg"
+                  alt="Tibetas gongs"
                 />
-                <div
-                  class="columns__image-overlay columns__image-overlay--strong-gradient"
-                ></div>
+                <div class="columns__image-overlay"></div>
               </div>
               <div class="contact-us__additional-info">
                 <p>
@@ -437,9 +435,15 @@
             </div>
           </div>
         </section>
+        <div id="map"></div>
       </main>
       <footer></footer>
     </div>
     <script src="dist/output.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=${GOOGLE_API_KEY}&language=lv&region=LV&callback=createMap"
+    ></script>
   </body>
 </html>
