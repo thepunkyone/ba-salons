@@ -4,10 +4,10 @@
   "description": "BA Salons website",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass -w styles/sass/main.scss styles/styles.css",
-    "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
-    "build": "envsub --env-file .env index.html dist/index.html && rollup -c && node-sass styles/sass/main.scss dist/styles/styles.css"
+    "dev": "envsub --env-file .env src/index.html dist/index.html & rollup -c -w & node-sass -w src/styles/sass/main.scss src/styles/styles.css",
+    "devserver": "live-server --open=dist/index.html",
+    "start": "npm-run-all --parallel devserver dev",
+    "build": "envsub --env-file .env src/index.html dist/index.html && rollup -c && node-sass src/styles/sass/main.scss src/styles/styles.css"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "node-sass": "^4.13.0",
     "npm-run-all": "^4.1.5",
     "rollup": "^1.29.0",
+    "rollup-plugin-copy-glob": "^0.3.1",
     "rollup-plugin-svg": "^2.0.0"
   }
 }
