@@ -33,11 +33,14 @@
   },
   "homepage": "https://github.com/thepunkyone/ba-salons#readme",
   "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
     "envsub": "^4.0.7",
     "node-sass": "^4.13.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^6.1.0",
     "rollup": "^1.29.0",
+    "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-copy-glob": "^0.3.1",
     "rollup-plugin-svg": "^2.0.0"
   }
