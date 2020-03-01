@@ -10,10 +10,9 @@ export default {
       [
         { files: "src/favicon.ico", dest: "dist/" },
         { files: "src/images/**", dest: "dist/images/" },
-        { files: "src/styles/fonts/**", dest: "dist/styles/fonts/" },
-        { files: "src/styles/styles.css", dest: "dist/styles/" }
+        { files: "src/styles/fonts/**", dest: "dist/styles/fonts/" }
       ],
-      { verbose: true, watch: true }
+      { verbose: false, watch: false }
     )
   ],
   watch: {

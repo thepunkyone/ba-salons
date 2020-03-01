@@ -4,10 +4,16 @@
   "description": "BA Salons website",
   "main": "index.js",
   "scripts": {
-    "dev": "envsub --env-file .env src/index.html dist/index.html & rollup -c -w & node-sass -w src/styles/sass/main.scss src/styles/styles.css",
+    "rollup:watch": "rollup -c -w",
+    "sass:watch": "node-sass -w src/styles/sass/main.scss dist/styles/styles.css",
+    "env:watch": "onchange 'src/index.html' -- envsub -f .env src/index.html dist/index.html",
+    "rollup:build": "rollup -c",
+    "sass:build": "node-sass src/styles/sass/main.scss dist/styles/styles.css",
+    "env:build": "envsub -f .env src/index.html dist/index.html",
+    "dev": "npm-run-all --parallel rollup:watch sass:watch env:watch",
     "devserver": "live-server --open=dist/index.html",
     "start": "npm-run-all --parallel devserver dev",
-    "build": "envsub --env-file .env src/index.html dist/index.html && rollup -c && node-sass src/styles/sass/main.scss src/styles/styles.css"
+    "build": "npm-run-all --parallel rollup:build sass:build env:build"
   },
   "repository": {
     "type": "git",
@@ -30,6 +36,7 @@
     "envsub": "^4.0.7",
     "node-sass": "^4.13.0",
     "npm-run-all": "^4.1.5",
+    "onchange": "^6.1.0",
     "rollup": "^1.29.0",
     "rollup-plugin-copy-glob": "^0.3.1",
     "rollup-plugin-svg": "^2.0.0"
