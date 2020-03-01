@@ -29,12 +29,12 @@
   &--about {
     background-image: linear-gradient(
         180deg,
-        rgba($colour-primary, 0.6),
-        rgba($colour-secondary, 0.6)
+        rgba($colour-primary, 0.8),
+        rgba($colour-secondary, 0.8)
       ),
-      url("../images/par-mums.jpg");
+      url("../images/ajurvedas-lietas.jpg");
     background-blend-mode: hard-light;
-    transform: translateZ(-3px) translateX(-60%) scale(5.2);
+    transform: translateZ(-2px) translateX(-30%) scale(3.6);
     z-index: -10;
   }
 
