@@ -83,31 +83,6 @@
   }
 }
 
-// Image overlay
-
-.columns__image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba($colour-primary, 0.3),
-    rgba($colour-secondary, 0.3)
-  );
-  mix-blend-mode: soft-light;
-
-  // &--strong-gradient {
-  //   background: linear-gradient(
-  //     180deg,
-  //     rgba($colour-primary, 0.7),
-  //     rgba($colour-secondary, 0.7)
-  //   );
-  //   mix-blend-mode: hard-light;
-  // }
-}
-
 // Two column layout
 
 .columns--two {

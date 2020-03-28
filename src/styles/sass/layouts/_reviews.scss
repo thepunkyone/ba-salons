@@ -3,11 +3,16 @@
 ========================================================================== */
 
 .reviews {
-  display: flex;
-  justify-content: center;
   background-color: $colour-secondary-light;
 
   @include responsive-gutters;
+}
+
+.reviews-inner {
+  display: flex;
+  justify-content: center;
+
+  @include clamped-width;
 }
 
 .review-card {

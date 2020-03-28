@@ -3,18 +3,24 @@
 ========================================================================== */
 
 .contact-strip {
+  background-color: $colour-primary-dark;
+
+  &--make-appointment {
+    background-color: $colour-secondary-grey;
+  }
+
+  @include responsive-gutters;
+}
+
+.contact-strip__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: gutter(4);
   padding-bottom: gutter(4);
-  background-color: $colour-primary-dark;
 
-  @include responsive-gutters;
+  @include clamped-width;
 
-  &--make-appointment {
-    background-color: $colour-secondary-dark;
-  }
 }
 
 // Button
@@ -30,7 +36,7 @@
   font-size: responsive(16, 20);
 
   .contact-strip--make-appointment & {
-    background-color: $colour-secondary-dark;
+    background-color: $colour-secondary-grey;
     color: $colour-primary-dark;
     border: 2px solid $colour-primary-dark;
   }

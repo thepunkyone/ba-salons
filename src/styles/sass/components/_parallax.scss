@@ -28,37 +28,37 @@
 
   &--about {
     background-image: linear-gradient(
-        180deg,
-        rgba($colour-primary, 0.8),
-        rgba($colour-secondary, 0.8)
-      ),
-      url("../images/ajurvedas-lietas.jpg");
-    background-blend-mode: hard-light;
-    transform: translateZ(-2px) translateX(-30%) scale(3.6);
-    z-index: -10;
-  }
-
-  &--masazas {
-    background-image: linear-gradient(
-        180deg,
-        rgba($colour-primary, 0.5),
-        rgba($colour-secondary, 0.5)
-      ),
-      url("../images/masazas-galds.jpg");
+                    180deg,
+                    rgba($colour-primary, 0.4),
+                    rgba($colour-secondary, 0.4)
+    ),
+    url("../images/masazas-galds.jpg");
     background-blend-mode: hard-light;
     transform: translateZ(-2px) translateX(-20%) scale(3.6);
     z-index: -10;
   }
 
+  &--masazas {
+    background-image: linear-gradient(
+                    180deg,
+                    rgba($colour-primary, 0.4),
+                    rgba($colour-secondary, 0.4)
+    ),
+    url("../images/ajurvedas-lietas.jpg");
+    background-blend-mode: hard-light;
+    transform: translateZ(-2px) translateX(-15%) scale(3.4);
+    z-index: -10;
+  }
+
   &--biruta {
     background-image: linear-gradient(
-        180deg,
-        rgba($colour-primary, 0.5),
-        rgba($colour-secondary, 0.5)
-      ),
-      url("../images/ba-salons-galds.jpg");
+                    180deg,
+                    rgba($colour-primary, 0.4),
+                    rgba($colour-secondary, 0.4)
+    ),
+    url("../images/ba-salons-galds.jpg");
     background-blend-mode: soft-light;
-    transform: translateZ(-2px) translateX(-25%) translateY(-10%) scale(3.6);
+    transform: translateZ(-2px) translateX(-25%) translateY(-20%) scale(3.6);
     z-index: -10;
   }
 

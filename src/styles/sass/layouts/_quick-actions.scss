@@ -2,15 +2,20 @@
     Quick Actions
 ========================================================================== */
 
+.quick-actions {
+  background: $colour-secondary-grey;
+
+  @include responsive-gutters;
+}
+
 // Grid
 
-.quick-actions {
+.quick-actions__inner {
   display: flex;
-  background: $colour-secondary-grey;
   padding-top: gutter(5);
   padding-bottom: gutter(5);
 
-  @include responsive-gutters;
+  @include clamped-width;
 }
 
 // Card
