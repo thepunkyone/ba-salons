@@ -15,6 +15,10 @@
   text-transform: uppercase;
   z-index: 5;
 
+  // experiment
+  background-color: $colour-secondary;
+  color: $colour-primary;
+
   @include responsive-gutters;
 }
 

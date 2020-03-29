@@ -4,6 +4,8 @@
 
 .quick-actions {
   background: $colour-secondary-grey;
+  // experiment
+  background-color: $colour-primary;
 
   @include responsive-gutters;
 }
@@ -37,6 +39,10 @@
   text-decoration: none;
   box-shadow: inset 0px 0px 0px 4px rgba($colour-primary-dark, 0.6);
 
+  // experiment
+  color: $colour-secondary;
+  box-shadow: inset 0px 0px 0px 4px rgba($colour-secondary, 0.6);
+
   &:first-child {
     margin-left: 0;
   }
@@ -49,6 +55,10 @@
 .quick-actions__icon {
   display: block;
   color: rgba($colour-primary-dark, 0.6);
+
+  // experiment
+  color: $colour-secondary;
+
   font-size: 4em;
   width: 80px;
   height: 80px;
@@ -57,5 +67,7 @@
 
   svg path {
     fill: rgba($colour-primary-dark, 0.9);
+    // experiment
+    fill: rgba($colour-secondary, 0.9);
   }
 }

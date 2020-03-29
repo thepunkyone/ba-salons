@@ -4,48 +4,47 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css"/>
+    <title>BA Salons</title>
 </head>
 <body>
 <div class="parallax__wrapper">
     <header>
-        <hero>
-            <div class="hero__container">
-                <img
-                        class="hero__image"
-                        src="./images/hero.jpg"
-                        alt="BA Salons masāžas kabinets"
-                />
-                <div class="hero__image-overlay"></div>
-                <!-- <img class="hero__logo" src="./images/logocircle.svg" /> -->
-                <div class="hero__languages">
-                    <a class="link-button link-button--tiny" href="#">LV</a>
-                    <a class="link-button link-button--tiny" href="#">RU</a>
-                </div>
-                <div class="hero__title">
-                    <h1 class="hero__heading">BA Salons</h1>
-                    <p class="hero__subheading">
-                        Ajurvēdiskās, Klasiskās, SPA un Reflektorās Masāžas
-                    </p>
-                </div>
-                <div class="hero__buttons">
-                    <a
-                            class="link-button link-button--gold hero__button"
-                            href="tel:29161903"
-                    >
-                        <span class="telefons inline-icon"></span>
-                        <span>29161903</span>
-                    </a>
-                    <a
-                            class="link-button link-button--gold hero__button"
-                            href="mailto:salons@ba-salons.lv"
-                            target="_top"
-                    >
-                        <span class="epasts inline-icon"></span>
-                        <span>salons@ba-salons.lv</span>
-                    </a>
-                </div>
+        <div class="hero__container">
+            <img
+                    class="hero__image"
+                    src="./images/hero.jpg"
+                    alt="BA Salons masāžas kabinets"
+            />
+            <div class="hero__image-overlay"></div>
+            <!-- <img class="hero__logo" src="./images/logocircle.svg" />
+            <div class="hero__languages">
+                <a class="link-button link-button--tiny" href="#">LV</a>
+                <a class="link-button link-button--tiny" href="#">RU</a>
+            </div> -->
+            <div class="hero__title">
+                <h1 class="hero__heading">BA Salons</h1>
+                <p class="hero__subheading">
+                    Ajurvēdiskās, Klasiskās, SPA un Reflektorās Masāžas
+                </p>
             </div>
-        </hero>
+            <div class="hero__buttons">
+                <a
+                        class="link-button link-button--gold hero__button"
+                        href="tel:29161903"
+                >
+                    <span class="telefons inline-icon"></span>
+                    <span>29161903</span>
+                </a>
+                <a
+                        class="link-button link-button--gold hero__button"
+                        href="mailto:salons@ba-salons.lv"
+                        target="_top"
+                >
+                    <span class="epasts inline-icon"></span>
+                    <span>salons@ba-salons.lv</span>
+                </a>
+            </div>
+        </div>
     </header>
     <nav class="navigation">
         <div class="navigation__container">
@@ -305,31 +304,6 @@
                 </a>
             </div>
         </div>
-        <section class="reviews">
-            <div class="reviews-inner">
-                <blockquote class="review-card">
-                    <p class="review-card__review">
-                        Masiere Biruta ir vienkārši super. Paldies par Jūsu ieguldījumu
-                        labsajūtā.
-                    </p>
-                    <footer class="review-card__name">
-                        <cite>
-                            Olga
-                        </cite>
-                    </footer>
-                </blockquote>
-                <blockquote class="review-card">
-                    <p class="review-card__review">
-                        Vienmēr lieliski! 😍 No sirds rekomendēju!
-                    </p>
-                    <footer class="review-card__name">
-                        <cite>
-                            Agnese
-                        </cite>
-                    </footer>
-                </blockquote>
-            </div>
-        </section>
         <div class="parallax__image parallax__image--masazas"></div>
         <section class="section section--biruta">
             <h2 class="section__heading">Masiere Biruta</h2>
@@ -372,6 +346,31 @@
                 "Novēlu ikvienam atrast savu vietu dzīvē un sasniegt savas
                 virsotnes!"
             </p>
+        </section>
+        <section class="reviews">
+            <div class="reviews-inner">
+                <blockquote class="review-card">
+                    <p class="review-card__review">
+                        Masiere Biruta ir vienkārši super. Paldies par Jūsu ieguldījumu
+                        labsajūtā.
+                    </p>
+                    <footer class="review-card__name">
+                        <cite>
+                            Olga
+                        </cite>
+                    </footer>
+                </blockquote>
+                <blockquote class="review-card">
+                    <p class="review-card__review">
+                        Vienmēr lieliski! 😍 No sirds rekomendēju!
+                    </p>
+                    <footer class="review-card__name">
+                        <cite>
+                            Agnese
+                        </cite>
+                    </footer>
+                </blockquote>
+            </div>
         </section>
         <div class="parallax__image parallax__image--biruta"></div>
         <section class="section section--contact-us">
@@ -426,17 +425,17 @@
                     </div>
                     <div class="contact-us__addresses">
                         <div class="contact-us__address">
-                            <p>"BA Salons" Rīga</p>
-                            <p>Pilsoņu iela 3</p>
-                            <p>Āgenskalns</p>
-                            <p>Rīga</p>
-                            <p>LV-1002</p>
+                            <p class="address__line">"BA Salons" Rīga</p>
+                            <p class="address__line">Pilsoņu iela 3</p>
+                            <p class="address__line">Āgenskalns</p>
+                            <p class="address__line">Rīga</p>
+                            <p class="address__line">LV-1002</p>
                         </div>
                         <div class="contact-us__address">
-                            <p>"BA Salons" Tukums</p>
-                            <p>Pasta iela 25</p>
-                            <p>Tukums</p>
-                            <p>LV-3101</p>
+                            <p class="address__line">"BA Salons" Tukums</p>
+                            <p class="address__line">Pasta iela 25</p>
+                            <p class="address__line">Tukums</p>
+                            <p class="address__line">LV-3101</p>
                         </div>
                     </div>
                 </div>

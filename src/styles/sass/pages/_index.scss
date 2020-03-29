@@ -27,8 +27,6 @@
   &--biruta {
     background-color: $colour-primary;
     color: $colour-black;
-
-    @include parallax-gap;
   }
 
   &--masazas-navigation {
@@ -125,6 +123,13 @@
   @include parallax-gap;
 }
 
+/*  Contact Strip - Make Appointment
+========================================================================== */
+
+.contact-strip--make-appointment {
+  @include parallax-gap;
+}
+
 /*  Reviews
 ========================================================================== */
 
@@ -190,22 +195,38 @@
 }
 
 .contact-us__address {
+  position: relative;
   width: 100%;
+  margin-bottom: gutter(2);
   padding: gutter(3);
   background-color: lighten($colour-secondary-light, 7%);
   border-radius: $border-radius;
   font-size: responsive(17, 21);
-  margin-bottom: gutter(2);
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    right: 0;
+    width: 180px;
+    height: 180px;
+    background-image: url("../images/location-pin.svg");
+    opacity: 0.5;
+    transform: translateX(20%);
+  }
 
   @include between($xsmall, $medium) {
     .contact-us__addresses &:first-of-type {
       margin-right: gutter(2);
     }
   }
+}
 
-  p {
-    margin: 0;
-  }
+.address__line {
+  position: relative;
+  margin: 0;
+  z-index: 5;
 }
 
 .contact-us__additional-info {
