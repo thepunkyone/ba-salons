@@ -1,9 +1,12 @@
-import appendSvg from "./appendSvg";
-import moveParallaxToTop from "./moveParallaxToTop";
-import createMap from "./createMap";
+import appendSvg from './appendSvg'
+import moveParallaxToTop from './moveParallaxToTop'
+import createMap from './createMap'
+import getCopyright from './getCopyright'
 
-appendSvg();
+appendSvg()
 
-moveParallaxToTop();
+moveParallaxToTop()
 
-window.createMap = createMap;
+getCopyright()
+
+window.createMap = createMap

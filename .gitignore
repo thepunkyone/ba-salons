@@ -3,4 +3,4 @@ node_modules
 dist
 .idea
 .vscode
-DS_STORE
+.DS_STORE
