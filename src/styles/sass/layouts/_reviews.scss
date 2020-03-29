@@ -11,6 +11,8 @@
 .reviews-inner {
   display: flex;
   justify-content: center;
+  padding-top: gutter(6);
+  padding-bottom: gutter(6);
 
   @include clamped-width;
 }
@@ -21,11 +23,14 @@
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  margin: gutter(4) gutter(2);
-  padding: gutter(4) gutter(5);
+  margin: gutter(4) gutter(4);
+  padding: gutter(8) gutter(4) gutter(8) gutter(8);
   background-color: lighten($colour-secondary-light, 7%);
   border-radius: $border-radius;
   overflow: hidden;
+
+  // experiment
+  background-color: $colour-grey-superlight;
 
   .reviews &:first-child {
     margin-left: 0;
@@ -53,7 +58,7 @@
   width: 80%;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: responsive(16, 20);
+  font-size: responsive(18, 24);
 }
 
 .review-card__name {
@@ -63,6 +68,6 @@
   cite {
     color: $colour-grey-medium;
     font-style: normal;
-    font-size: responsive(14, 17);
+    font-size: responsive(17, 20);
   }
 }

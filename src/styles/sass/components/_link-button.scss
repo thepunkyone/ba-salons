@@ -14,6 +14,10 @@
 
   &--gold {
     background-color: $colour-primary-dark;
+
+    // experiment
+    background-color: $colour-primary-bright;
+    color: $colour-secondary-dark;
   }
 
   &--tiny {

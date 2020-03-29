@@ -3,7 +3,7 @@
 ========================================================================== */
 
 .massage-menu {
-  margin-bottom: gutter(8);
+  padding-bottom: gutter(6);
   background-color: $colour-white;
   border-radius: $border-radius;
 }
@@ -21,6 +21,12 @@
 
 //Columns
 
+.massage-menu__columns {
+  padding-top: gutter(6);
+
+  @include clamped-width;
+}
+
 .massage-menu__column {
   text-align: left;
 
@@ -30,16 +36,6 @@
 
   @include between($xsmall, $medium) {
     padding: 0 gutter(5);
-  }
-
-  @include above($medium) {
-    .massage-menu &:first-child {
-      padding-left: gutter(5);
-    }
-
-    .massage-menu &:last-child {
-      padding-right: gutter(5);
-    }
   }
 }
 
@@ -84,4 +80,6 @@
   padding-bottom: gutter(5);
   color: $colour-grey-medium;
   border-top: 2px solid $colour-grey-superlight;
+
+  @include clamped-width;
 }

@@ -5,8 +5,14 @@
 .contact-strip {
   background-color: $colour-primary-dark;
 
+  // experiment
+  background-color: $colour-grey-superlight;
+
   &--make-appointment {
     background-color: $colour-secondary-grey;
+
+    // experiment
+    background-color: $colour-grey-superlight;
   }
 
   @include responsive-gutters;
@@ -35,10 +41,19 @@
   border: 2px solid $colour-secondary-dark;
   font-size: responsive(16, 20);
 
+  // experiment
+  background-color: $colour-primary-bright;
+  border: none;
+
   .contact-strip--make-appointment & {
     background-color: $colour-secondary-grey;
     color: $colour-primary-dark;
     border: 2px solid $colour-primary-dark;
+
+    // experiment
+    background-color: $colour-primary-bright;
+    color: $colour-secondary-dark;
+    border: none;
   }
 
   .contact-strip--make-appointment &:first-of-type {
@@ -61,5 +76,8 @@
   .contact-strip--make-appointment & {
     color: $colour-primary-dark;
     font-size: responsive(16, 20);
+
+    // experiment
+    color: $colour-secondary-dark;
   }
 }
