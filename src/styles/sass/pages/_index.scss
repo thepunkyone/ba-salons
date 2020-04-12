@@ -109,10 +109,10 @@
   margin-bottom: gutter(6);
 }
 
-.biruta__quote {
-  background-color: $colour-secondary-light;
-  color: $colour-grey-dark;
-}
+//.biruta__quote {
+//  background-color: $colour-secondary-light;
+//  color: $colour-grey-dark;
+//}
 
 .massages__quote {
   @include above($small) {

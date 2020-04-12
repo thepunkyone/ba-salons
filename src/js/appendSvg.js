@@ -14,6 +14,8 @@ import facebook from '../svgs/icons/facebook.svg'
 import twitter from '../svgs/icons/twitter.svg'
 import draugiem from '../svgs/icons/draugiem.svg'
 
+import lotus from '../svgs/artwork/lotus.svg'
+
 const appendSvg = () => {
     const phoneIcons = document.getElementsByClassName('telefons')
 
@@ -52,6 +54,7 @@ const appendSvg = () => {
     document.getElementById('facebook').innerHTML = facebook
     document.getElementById('twitter').innerHTML = twitter
     document.getElementById('draugiem').innerHTML = draugiem
+    document.getElementById('hero-lotus').innerHTML = lotus
 }
 
 export default appendSvg
