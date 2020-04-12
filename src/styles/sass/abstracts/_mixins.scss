@@ -54,6 +54,14 @@
   }
 }
 
+@mixin clamped-width-small {
+  @include above($medium) {
+    max-width: $medium;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /*  Parallax Gap
 ========================================================================== */
 

@@ -3,16 +3,13 @@
 ========================================================================== */
 
 .contact-strip {
-  background-color: $colour-primary-dark;
+  width: 50%;
+  background-color: rgba($colour-white, 0.6);
 
-  // experiment
-  background-color: $colour-grey-superlight;
+  &--gift-card {
+  }
 
   &--make-appointment {
-    background-color: $colour-secondary-grey;
-
-    // experiment
-    background-color: $colour-grey-superlight;
   }
 
   @include responsive-gutters;
@@ -20,8 +17,9 @@
 
 .contact-strip__inner {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: gutter(4);
   padding-bottom: gutter(4);
 
@@ -40,6 +38,7 @@
   color: $colour-secondary-dark;
   border: 2px solid $colour-secondary-dark;
   font-size: responsive(16, 20);
+  border-radius: 200px;
 
   // experiment
   background-color: $colour-primary-bright;
@@ -56,9 +55,9 @@
     border: none;
   }
 
-  .contact-strip--make-appointment &:first-of-type {
-    margin-left: auto;
-  }
+  //.contact-strip--make-appointment &:first-of-type {
+  //  margin-left: auto;
+  //}
 }
 
 .contact-strip__icon {

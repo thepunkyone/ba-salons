@@ -21,7 +21,14 @@
   }
 
   &--about {
-    padding-top: gutter(6);
+    padding-top: gutter(10);
+    padding-bottom: gutter(12);
+    text-align: center;
+    //background-color: $colour-grey-superlight;
+
+    & > * {
+      @include clamped-width-small;
+    }
   }
 
   &--biruta {
@@ -53,12 +60,14 @@
 // Section heading
 
 .section__heading {
-  margin-bottom: gutter(5);
-  color: $colour-black;
-  border-bottom: 2px solid $colour-black;
+  margin-bottom: gutter(3);
+  color: $colour-grey-medium;
+  border-bottom: 2px solid $colour-grey-medium;
   text-transform: uppercase;
-  text-align: center;
   letter-spacing: 0.1rem;
+  display: inline-block;
+  padding-left: 2em;
+  padding-right: 2em;
 
   &--light {
     color: $colour-primary-dark;
@@ -97,7 +106,7 @@
 ========================================================================== */
 
 .about__quote {
-  margin-bottom: gutter(3);
+  margin-bottom: gutter(6);
 }
 
 .biruta__quote {
@@ -125,16 +134,16 @@
 /*  Quick Actions
 ========================================================================== */
 
-.quick-actions {
-  @include parallax-gap;
-}
+//.quick-actions {
+//  @include parallax-gap;
+//}
 
 /*  Contact Strip - Make Appointment
 ========================================================================== */
 
-.contact-strip--make-appointment {
-  @include parallax-gap;
-}
+//.contact-strip--make-appointment {
+//  @include parallax-gap;
+//}
 
 /*  Reviews
 ========================================================================== */
