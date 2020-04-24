@@ -27,6 +27,7 @@
   padding-top: gutter(6);
 
   @include clamped-width;
+  @include responsive-gutters;
 }
 
 .massage-menu__column {
@@ -84,4 +85,5 @@
   border-top: 2px solid $colour-grey-superlight;
 
   @include clamped-width;
+  @include responsive-gutters;
 }

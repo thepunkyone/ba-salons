@@ -22,6 +22,11 @@
   .contact-strip--make-appointment &:first-of-type {
     margin-bottom: gutter(3);
   }
+
+  .contact-strip--gift-card & {
+    background-color: $colour-primary-dark;
+    color: $colour-white;
+  }
 }
 
 .contact-strip__icon {
