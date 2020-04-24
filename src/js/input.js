@@ -1,11 +1,11 @@
 import appendSvg from './appendSvg'
-import moveParallaxToTop from './moveParallaxToTop'
+import showParallax from './showParallax'
 import createMap from './createMap'
 import getCopyright from './getCopyright'
 
 appendSvg()
 
-moveParallaxToTop()
+showParallax()
 
 getCopyright()
 

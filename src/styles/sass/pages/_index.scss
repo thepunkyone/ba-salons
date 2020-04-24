@@ -109,10 +109,10 @@
   margin-bottom: gutter(6);
 }
 
-//.biruta__quote {
-//  background-color: $colour-secondary-light;
-//  color: $colour-grey-dark;
-//}
+.biruta__quote {
+  padding: gutter(7) gutter(8);
+  font-size: responsive(22, 27);
+}
 
 .massages__quote {
   @include above($small) {
@@ -148,9 +148,9 @@
 /*  Reviews
 ========================================================================== */
 
-.reviews {
-  @include parallax-gap;
-}
+//.reviews {
+//  @include parallax-gap;
+//}
 
 /*  Contact Us
 ========================================================================== */

@@ -31,7 +31,7 @@
   }
 
   @include above($medium) {
-    padding-top: 23vw;
+    padding-top: 37vw;
   }
 }
 
@@ -54,16 +54,16 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    180deg,
-    rgba($colour-primary, 0.8),
-    rgba($colour-secondary, 0.8)
+                  180deg,
+                  rgba($colour-primary, 0.8),
+                  rgba($colour-secondary, 0.8)
   );
   mix-blend-mode: soft-light;
 }
 
 .massage-hero__heading {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +83,7 @@
   }
 
   @include above($xsmall) {
-    padding: gutter(1.5) gutter(16) gutter(1) gutter(5);
+    padding: gutter(1.5) gutter(1.5) gutter(1.5) gutter(5);
   }
 }
 
